@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>float</title>
+
+<style>
+	*{margin: 0; padding: 0;}
+	ul,ol{list-style: none;}
+	a{text-decoration:none;}
+	
+	
+	div.wrap {width: 500px; background-color: skyblue;}
+	
+	div.left,
+	div.right{width:135px; height: 200px;
+	float:left;
+		_display:inline-block;}
+	
+	div.left{background-color: pink;}
+	div.right{background-color: blue;
+		_margin-left:-6px;}
+	
+	div.clear{clear: both;}
+	div.visual:after {content:"안녕하세요"}
+	dic.visual:befor {content: "유선건님"}
+	
+	</style>
+</head>
+
+
+<body>
+	<div class="wrap">
+		<div class="left">wiew01</div>
+		<div class="right">wiew02</div>
+		<div class="clear">float clear</div>
+	</div>
+	<div class="visual">Lorem ipsum dolor sit amet.</div>
+	
+</body>
+
+
+
+
+
+
+
+</html>
