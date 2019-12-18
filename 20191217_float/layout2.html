@@ -11,22 +11,41 @@
 	
 	div.header{
 		width: 1200px;
-		background-color: skyblue; 
 		margin:0 auto;
+		margin-bottom: 20px;
 	}
 	div.header>h1{
-		font-size: 50px;
-		background-color: aliceblue;
+		font-size: 40px;
 		width: 200px;
 		text-align: center;
 		margin: 0 auto;
+		padding: 20px;
 	}
 	
-	div.header>div.nav{width: 100%;}
-	div.header>div.nav>ul
-	div.header>div.nav>ul>li{float: left;}
-	div.header>div.nav>ul>li>a
 	
+	div.header>div.nav>ul:after{
+		display: block;
+		clear: both;
+		content: ""
+	}
+	div.header>div.nav>ul>li{
+		float: left; 
+		width: 20%;
+	}
+	div.header>div.nav>ul>li>a{
+		display: block;
+		text-align: center;
+		line-height: 50px; 
+		font-size: 20px;
+	}
+	div.header>div.nav>ul>li>a:hover {
+		color: aliceblue;
+		background-color: blue;
+	}
+	div.visual{
+		height: 400px;
+		background-color: pink
+	}
 	
 	</style>
 
@@ -45,7 +64,12 @@
 		</ul>
 	</div>
 </div>	
-<div class="visual"></div>
+
+<div class="visual">
+	
+	
+	
+</div>
 
 </body>
 </html>

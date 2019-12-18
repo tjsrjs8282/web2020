@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>layout</title>
+</head>
+
+<style>
+	*{margin: 0; padding: 0; list-style: none; text-decoration: none;}
+
+	#header{
+		width: 1000px;
+		margin:0 auto;
+		}
+	#header > h1{
+		text-align:center; 
+		height: 70px;
+		line-height:70px;
+		padding-top: 10px;
+		}
+    
+    .gnb > ul{
+    	width: 1000px; 
+    	margin:0 auto; 
+    	}
+    .gnb ul:after{
+    	display:block; 
+    	clear: both; 
+    	content: ""
+		}
+    .gnb ul > li{
+    	float: left; 
+    	width: 166.67px; 
+    	text-align:center; 
+    	}
+    .gnb ul > li > a{
+    	text-align:center; 
+    	display:block;
+    	font-size: 20px;
+    	height: 50px; 
+    	line-height:50px; 
+    	color: #000;
+    	transition:all 0.3s ease;
+    	}
+	.gnb ul > li > a:hover{
+		border-bottom:3px solid #000; box-sizing:border-box;
+		}	
+
+	#visual {
+		margin-top:20px;
+		width: 100%; 
+		height:500px; 
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-image: url(../image/pc01.jpg);
+		}
+
+	#visual > p{
+		color:rgba(255,255,255,0.8);
+		width:1000px;
+		margin:0 auto;
+		padding-top:30px;
+		font-size:20px;
+		font-weight:bold;
+		text-align:center;
+	}
+	.container{
+		width: 1000px;
+		margin:0 auto; 
+		}
+	.container > ul:after{
+		content: ""; 
+		display:block; 
+		clear:both;
+		}
+ 	.container > ul > li{
+ 		padding-top: 40px;
+ 		float:left; 
+ 		width:20%;
+ 		opacity:0.8;
+ 		}
+ 	.container > ul > li > img {
+ 		width:100%;
+ 		}
+
+ 	.container > h2{
+ 		display:block; 
+ 		width: 250px;
+ 		margin: 35px auto;
+ 		text-align:center; 
+ 		padding: 15px;
+ 		color: #fff;
+ 		font-size:30px;
+ 		border: 2px solid #fff;
+ 		transition: all 0.5s ease;
+ 		cursor: pointer;
+ 		}
+	
+	.container > h2:hover{
+		background-color:#fff; 
+		color: #000;} 
+	#main {
+		padding-top: 50px;
+		 width: 1000px; 
+		 height: 350px;
+		  margin:auto;
+		}
+	ul.mainimg li{
+		padding-top: 30px; 
+		float:left; 
+		width: 237.5px;
+		margin-left:10px;
+		}
+	ul.mainimg li img{
+		width: 100%;
+	}
+
+	#main h2{
+		color: #000;
+		 text-align:center;
+		}
+	.pink {background-color: pink;}
+	.gray {background-color: gray;}
+
+	</style>
+ 
+<body>
+	<!-- header -->
+	<div id="header">
+		<h1>logo</h1>
+		<nav class="gnb">
+			<ul>  
+				<li><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li><a href="#">menu3</a></li>
+				<li><a href="#">menu4</a></li>
+				<li><a href="#">menu5</a></li>
+				<li><a href="#">menu6</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+	<!-- main img -->
+	<div id="visual">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque eaque autem modi, recusandae dolores, maxime dolore voluptatibus. Ad at iste eum fugiat nam ipsam nesciunt maiores ratione, earum tenetur, impedit!</p>
+
+		<div class="container">
+			<ul>
+				<li><img src="../image/testimg.jpg" alt=""></li>
+				<li><img src="../image/testimg.jpg" alt=""></li>
+				<li><img src="../image/testimg.jpg" alt=""></li>
+				<li><img src="../image/testimg.jpg" alt=""></li>
+				<li><img src="../image/testimg.jpg" alt=""></li>
+			</ul>
+			<h2>자세히보기</h2>
+		</div>
+	</div>
+	
+	
+	<div id="main">
+		<h2>GALLERY</h2>
+		<ul class="mainimg">
+				<li><img src="../image/testimg.jpg" alt=""></li>
+				<li><img src="../image/testimg.jpg" alt=""></li>
+				<li><img src="../image/testimg.jpg" alt=""></li>
+				<li><img src="../image/testimg.jpg" alt=""></li>
+			</ul>
+	</div>
+
+	<div class="conWrap pink">
+		<div id="main">
+			<h2>GALLERY</h2>
+			<ul class="mainimg">
+					<li><img src="../image/testimg.jpg" alt=""></li>
+					<li><img src="../image/testimg.jpg" alt=""></li>
+					<li><img src="../image/testimg.jpg" alt=""></li>
+					<li><img src="../image/testimg.jpg" alt=""></li>
+				</ul>
+		</div>
+	</div>
+
+	<div class="conWrap gray">
+		<div id="main">
+			<h2>GALLERY</h2>
+			<ul class="mainimg">
+					<li><img src="../image/testimg.jpg" alt=""></li>
+					<li><img src="../image/testimg.jpg" alt=""></li>
+					<li><img src="../image/testimg.jpg" alt=""></li>
+					<li><img src="../image/testimg.jpg" alt=""></li>
+				</ul>
+		</div>
+	</div>
+
+
+<!-- box-sizing:border-box; 이게 패딩이랑 보더가 원래 있는 넓이 높이 안쪽으로 생성되는거 -->
+<!-- color:rgba(0,0,0,0)  RGA값 A는 알파로 즉 투명도 값   img는 opacity: 0  으로 투명도  -->
+
+
+</body>
+</html>
