@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=	">
+	<meta charset="UTF-8">
+	<title>position</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+
+</head>
+
+<style>	
+ body{background-image:url(../image/bg_grid.gif);}
+div{width: 200px;	 height: 200px;	 position: absolute;}
+.box1{background-color: #f00; z-index: 1 ; display:none;}
+.box2{background-color: #0f0; top: 50px; left: 50px; display:none; }
+.box3{background-color: #00f; top: 50%;left: 50%;
+transform:translate(-50%, -50%); }
+
+/*transform;translate()*/
+
+div.boxWrap{width: 300px; height: 300px; 
+	background-color:#ff0; margin:20px auto; position: relative;}
+
+
+</style>
+
+<body>
+
+	<div class="boxWrap">
+		<div class="box1">box1</div>
+		<div class="box2">box1</div>
+		<div class="box3">box3</div>
+	</div>
+		
+
+
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<!-- 슬라이드 링크 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <!-- 스타일시트 -->
+	<link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+	<style>
+
+	#header{width: 1000px; height: 50px; background-color: skyblue; margin: 0 auto; position:relative; margin-top:10px;}
+
+	#header .nav{width: 600px; height: 50px; background-color: #f00; position:absolute; bottom:0px; right:0;}
+	#header .nav ul {}
+	#header .nav ul li{float: left; width: 100px;}
+	#header .nav ul li a{display: block; text-align:center; line-height:50px; font-weight: bold; font-weight:bold; color:#fff; transition:all 0.2s ease;}
+	#header .nav ul li a:hover{background-color:orange;}
+	#header h1{width: 120px; background-color: #fff; line-height: 50px; text-align: center; }
+
+
+	.visual{width: 1000px; margin: 10px auto;}
+	div.slider img{width: 100% ;}
+
+	.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0px none;
+    background: #fff;}
+
+	.box{width: 200px; height: 200px; background-color: skyblue; position: absolute; top: 100px; left: 100px; z-index: 1}
+
+	/*top left bottom right z-index은 position 값 있을때만*/
+
+	.box1{width: 200px; height: 200px; background-color: red; position: absolute; top: 150px; left: 150px;}
+
+	div.boxwrap{height: 300px; background-color:#ff0;position:relative;}
+
+	</style>
+
+<script>
+// $(document).ready(function(){}); 첫시작 
+$(document).ready(function(){
+	$(".slider").bxSlider();  
+});
+
+
+</script>
+
+
+
+
+</head>
+	
+
+
+<body>
+	 <div id="header">
+	 	<h1>LOGO</h1>
+	 	<nav class="nav">
+	 		<ul>
+	 			<li><a href="#">menu1</a></li>
+	 			<li><a href="#">menu2</a></li>
+	 			<li><a href="#">menu3</a></li>
+	 			<li><a href="#">menu4</a></li>
+	 			<li><a href="#">menu5</a></li>
+	 			<li><a href="#">menu6</a></li>
+	 		</ul>
+	 	</nav>
+	 </div>
+
+	 <div class="visual">
+  	 <div class="slider">
+  	 	<div><img src="../image/pc01.jpg" alt=""></div>
+  	 	<div><img src="../image/pc02.jpg" alt=""></div>
+  	 	<div><img src="../image/pc03.jpg" alt=""></div>
+  	 </div>
+  	 </div>
+
+	<div class="boxwrap">
+		<div class="box"></div>
+		<div class="box1"></div>
+	</div>
+
+<!-- 컨트로 누른채로 괄호[] - 텍스트 이동시키기 -->
+<!-- 컨트롤 시프트 누른태로 괄호[] - 텍스트 접기 -->
+<!-- 컨트롤 시프트 누른채로 화살표 - 텍스트 위아래로 옮기기  -->
+
+
+</body>
+</html>
