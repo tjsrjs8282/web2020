@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Position</title>
+	<link rel="stylesheet" href="css/reset.css">
+
+	<style>
+		body{background-image:url(../image/bg_grid.gif);}
+
+	div.box1,
+	div.box2,
+	div.box3,
+	div.box4,
+	div.box5{width: 200px;height: 200px; position:absolute;}
+
+	div.box1{top: 0; left:50%; background-color: blue; margin-left:-100px; z-index:10;}
+	div.box1:after{content:"박스입니다";}
+	.box2{top: 50%; right: 0; background-color: red; margin-top:-100px; z-index:9}
+	.box3{bottom: 0; left: 50%; background-color: skyblue;
+		margin-left:-100px; z-index:8}
+	.box4{left: 0; top: 50%; background-color: yellow; margin-top:-100px; z-index:7}
+	.box5{top:50%; left: 50%; background-color: #000; margin-top:-100px; margin-left:-100px; z-index:6}
+	.box6{width: 100px; height: 100px; background-color: #fff;position:absolute; top:50%; left: 50%; transform:translate(-50%, -50%);z-index:12}
+	.box7{width: 100px; height: 100px; position:absolute; top: 50%; right:100px; background-color:green; transform: translate(50%, -50%); z-index:11}
+
+	.boxWrap{position:relative; width: 1000px; height: 700px; margin:0 auto; background-color: gray;}
+
+	</style>
+
+</head>
+
+<body>
+
+<div class="boxWrap">
+	<div class="box1">box1</div>
+	<div class="box2">box2</div>
+	<div class="box3">box3</div>
+	<div class="box4">box4</div>
+	<div class="box5">box5</div>
+	<div class="box6">box6</div>
+	<div class="box7">box6</div>
+</div>
+
+</body>
+	
+</html>
