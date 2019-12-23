@@ -1,1 +1,31 @@
  body{background-image:url(../../image/bg_grid.gif);}
+
+ header#main_header{background-color: skyblue;}
+ header#main_header>div.main_util{border-bottom: 1px solid #000;}
+
+.util_menu ul{width: 1000px; height: 50px; margin:0 auto;}
+.util_menu ul li{float: right; /*border-right: 1px solid #000;*/
+ line-height: 50px; padding:0 20px;}
+
+.util_menu ul li a{text-align: center;}
+
+
+div.util_menu ul li:after {content:"" ; width: 1px; height: 10px;
+ display: block; background-color: #f00;}
+div.util_menu ul li:after {content: ""; display: none;}
+
+
+
+
+
+
+/*
+div.util_menu{width: 980px; margin: 0 auto; background-color: pink;}
+.util_menu ul{float: right; }
+.util_menu ul li{ float:left; position: relative;}
+.util_menu ul li a{display: block; line-height: 30; 
+	text-align: center; padding:0 50px;}
+
+.util_menu ul li a:after{content: "" ;display: block; width: 1px;
+height: 10px; background-color: #f00; position: absolute; top: 10px;}
+.util_menu ul li:first-child:after {content: ""; display: none;}*/
