@@ -1,5 +1,5 @@
 @charset "utf-8";
-header#main_header>div.main_util{border-bottom: 1px solid #000;}
+header#main_header>div.main_util{border-bottom: 1px solid #eeeeee;}
 header#main_header>div.main_util>nav.util_menu{
 	width: 980px;margin: 0 auto;
 }
@@ -10,8 +10,8 @@ nav.util_menu>ul>li>a{
 	padding:0 20px;
 }
 nav.util_menu>ul>li:after{
-	content:"";display: block;width:1px;height:10px;background-color: #f00;
-	position: absolute;top:10px;
+	content:"";display: block; width:1px; height:10px;background-color: #585858;
+	position: absolute; top:10px;
 }
 
 nav.util_menu>ul>li:last-child:before{display: none; content: "";}
@@ -90,22 +90,31 @@ article#container2 img{display: block; float: right; width:150px; padding-right:
 .card_body p:last-child{color: #4b8ce0; font-weight:bold;display:inline-block;margin-top:15px; cursor: pointer;}
 
 /*aticle2 end*/
-.footer_end{width: 100%; height: 50px; background-color: #4d4d4d; margin-top: 30px;}
+
+
+/*footer start*/
+.footer_end{width: 100%; height: 50px; background-color: #4d4d4d; margin-top: 30px; position:relative;}
 .footer_menu{width: 980px; margin:0 auto; }
 .footer_menu ul{}
 .footer_menu ul li{
-	color: #b8aeae; font-weight: bold; line-height:40px; position: relative;
-	float: left; padding:0 30px; text-align: center; }
+	color: #b8aeae; font-weight: bold; line-height:40px; 
+	float: left; padding:0 20px; text-align: center; position: relative;}
 
 .footer_menu ul li:before{
 	content:""; display: block; width:1px; height:10px;background-color: #b8aeae; 
 	position:absolute; top:17px; left: 0px;}
 
 .footer_menu ul li:first-child:before{content:""; display: none;}
+.footer_menu ul li:first-child{padding-left: 0;}
+
+.top {width: 980px; margin:0 auto; position: relative;}
+.top h2{color: #cccccc; position:absolute; top:0; right: 15px; font-size:12px; z-index: 1;}
+.top p:nth-child(2){width: 45px; height: 39px; background-color: #333333 ; color:#cccccc; 
+	position:absolute; top:0px; right: 0px; font-size:15px; text-align: center; line-height: 50px;}
 
 .footer_clear{width: 100%; height: 100px; background-color: #5e5e5e;}
 .footer_box{width: 980px; margin:0 auto; position: relative;}
-.footer_logo h1 {font-size:25px; line-height:100px; color:#cccccc;}
+.footer_logo h1 {font-size:25px; line-height:100px; color:#eeeeee;}
 .footer_text p:nth-child(1) {font-size:12px; float: right; color:#b8aeae; position:absolute; top:10px; left: 180px; font-weight: bold;}
 .footer_text p:nth-child(2) {font-size:12px; float: right; color:#b8aeae; position:absolute; top:30px; left: 180px; font-weight: bold;}
 .footer_text p:nth-child(3) {font-size:12px; float: right; color:#b8aeae; position:absolute; top:50px; left: 180px; font-weight: bold;}
