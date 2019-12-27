@@ -1,0 +1,10 @@
+@charset "utf-8";
+table{width: 500px;	border:1px solid #000;
+border-collapse:collapse;}
+tr,td,th{border:1px solid #000;}
+th{background-color: skyblue;}
+
+tbody>tr:nth-child(2n+1){background-color: pink;}
+table>caption{display: none;}
+tbody >tr:hover 
+
