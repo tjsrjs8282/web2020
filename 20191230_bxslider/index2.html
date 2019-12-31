@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="css/jquery.bxslider.css" class="css">
+	<link rel="stylesheet" href="css/reset.css" class="css">
+	
+
+	<style>
+		.bxslider img{width: 100%;}
+		.bxsliderWrap{position: relative;}
+		.nextBtn,.prevBtn{position:absolute;top: 50%; margin-top: -50px;}
+		.nextBtn{right: 0;}
+	</style>
+	
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			var mySlide = $(".bxslider").bxSlider({
+				controls:false,
+				pager:false,
+				mode:'fade',
+				speed:200,
+			});
+
+			$(".nextBtn").click(function(){
+				mySlide.goToNextSlide();
+			});
+
+			$(".prevBtn").click(function(){
+			    mySlide.goToPrevSlide();
+			});
+
+			$(".bxsliderOne").bxSlider({
+
+			});
+		});
+
+
+	</script>
+
+</head>
+<body>
+
+	<div class="bxsliderWrap">
+		<ul class="bxslider">
+			<li><img src="images/pc01.jpg" alt="image01"></li>
+			<li><img src="images/pc02.jpg" alt="image02"></li>
+			<li><img src="images/pc03.jpg" alt="image03"></li>
+		</ul>
+
+		<div class="nextBtn">
+			<img src="images/btn_right.png" alt="다음">
+		</div>
+		<div class="prevBtn">
+			<img src="images/btn_left.png" alt="이전">
+		</div>
+
+	</div>
+	
+	
+	<ul class="bxsliderOne">
+			<li><img src="images/pc01.jpg" alt="image01"></li>
+			<li><img src="images/pc02.jpg" alt="image02"></li>
+			<li><img src="images/pc03.jpg" alt="image03"></li>
+		</ul>
+
+</body>
+</html>

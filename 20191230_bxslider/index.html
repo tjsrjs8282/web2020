@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>bxslider</title>
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/reset.css">
+
+	<style>
+	.sliderWrap{width: 500px; margin:0 auto;}
+	.bx-wrapper {
+		margin-bottom: 0; 
+     -moz-box-shadow: 0 none;
+     -webkit-box-shadow: 0 none;
+     box-shadow: 0 none; 
+     border: 0 none;
+	}
+	.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+	}
+	.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #585858;
+    text-indent: -9999px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;}
+
+    .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #fff;}
+
+	</style>
+	
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider({auto:true
+			});
+		});
+
+		function dlink(){
+			location.href="http://www.naver.com";
+		};
+
+
+	</script>
+
+</head>
+<body>
+<div class="sliderWrap" >
+	<ul class="slider">
+			<li><img src="images/pc01.jpg" alt="img01"></li>
+			<li><img src="images/pc02.jpg" alt="img02"></li>
+			<li><img src="images/pc03.jpg" alt="img03"></li>
+		</ul>	
+</div>
+<div style="height: 200px; background-color: gray;" onclick="dlink();"></div>
+	
+</body>
+</html>
+
+

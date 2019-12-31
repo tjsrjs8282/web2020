@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>visual</title>
+<!-- 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> -->
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<style>
+		.wrapper{width: 1000px; height: 400px;position: relative; margin:0 auto;}
+		.bx-wrapper {
+	    -moz-box-shadow: 0 none;
+	    -webkit-box-shadow: 0 none;
+	    box-shadow: 0 none;
+	    border: 0 none;
+	    margin-bottom: 0 none;}
+
+	    .slider_pager{position:absolute; bottom: -120px; width: 100%;  }  
+	    /*부모가 포지션이 되면서 자식들이 부모의 width값을 잃어버림 그래서 width 100%를 잡아줘야 밑에서 25%가 먹음*/
+		
+	    .slider_pager a{display: block; width: 25%; float: left; text-align: center; line-height: 40px; font-weight: bold; background-color: skyblue; transition: all 0.2s;}
+	    .slider_pager a.active{background-color: darkblue; color: #fff;}
+		
+		.slider_pager a:hover{background-color: darkblue; color: #fff;}
+
+		.slider li img{transition: all 0.7s ease;}
+		.slider li img{width:100%; height: 500px;}
+	    .slider li img:hover{transform:scale(1.05);}
+
+
+		.slider_text {width: 400px; position: absolute; top: 50px; left: 20px; text-align: center; font-weight: bold; color: #fff;}
+		.slider_text2 {width: 400px; position: absolute; top: 50px; left:20px; text-align: center; font-weight: bold; color: #fff;}
+		.slider_text3 {width: 400px; position: absolute; top: 50px; right:20px; text-align: center; font-weight: bold; color: #fff;}
+		.slider_text4 {width: 400px; position: absolute; top: 150px; left:20px; text-align: center; font-weight: bold; color: #fff;}
+
+		.slider h1{ margin-bottom: 20px;}
+		.slider h1:after{display: block; width: 300px; height: 1px; background-color: #fff; content: ""; margin-left: 50px; margin-top: 3px;}
+		.slider p{font-size:17px;}
+	    .textBox{background-color: rgba(0,0,0,0.3); width: 150px; height: 40px; line-height: 40px; text-align: center; position: absolute; top: 175px;
+	    	right: 120px; transition: all 0.3s; cursor: pointer; border-radius: 20px;}
+
+	    .textBox h2{color: #fff; font-size:20px;}
+	    .textBox:hover{background-color: rgba(0,0,0,0.7)}
+
+
+	</style>
+
+
+
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider({
+				pagerCustom:".bx_pager",
+				mode:'horizontal',
+				speed:1000,
+				controls:false,
+
+			});
+
+			
+		});
+	</script>
+</head>
+<body>
+
+<div class="wrapper">
+	<div class="sliderWrap">
+		<ul class="slider">
+				<li><img src="images/main_slider01.png" alt="">
+					<div class="slider_text">
+						<h1>Lorem ipsum dolor</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, maiores similique? Labore quidem itaque aperiam esse sapiente asperiores, tenetur quam.</p>
+						<div class="textBox">
+							<h2 onclick="location.href='http://tjsrjs8282.dothome.co.kr/msg/msg.html';">자세히 보기</h2>
+						</div>
+					</div>
+					</li>
+			<li><img src="images/main_slider02.png" alt="">
+				<div class="slider_text2">
+						<h1>Lorem ipsum dolor</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, maiores similique? Labore quidem itaque aperiam esse sapiente asperiores, tenetur quam.</p>
+						<div class="textBox">
+							<h2 onclick="location.href='http://tjsrjs8282.dothome.co.kr/vr1.png';">자세히 보기</h2>
+						</div>
+					</div>
+			</li>
+			<li><img src="images/main_slider03.png" alt="">
+				<div class="slider_text3">
+						<h1>Lorem ipsum dolor</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, maiores similique? Labore quidem itaque aperiam esse sapiente asperiores, tenetur quam.</p>
+						<div class="textBox">
+							<h2 onclick="location.href='http://tjsrjs8282.dothome.co.kr/dogtoy/bbang.html';">자세히 보기</h2>
+						</div>
+					</div>
+			</li>
+			<li><img src="images/main_slider04.jpg" alt="">
+				<div class="slider_text4">
+						<h1>Lorem ipsum dolor</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, maiores similique? Labore quidem itaque aperiam esse sapiente asperiores, tenetur quam.</p>
+						<div class="textBox">
+							<h2 onclick="location.href='https://movie.naver.com/movie/bi/mi/basic.nhn?code=136873';">자세히 보기</h2>
+						</div>
+					</div>
+			</li>
+		</ul>
+	</div>
+
+	<div class="slider_pager">
+		<div class="bx_pager clearfix">
+			<a href="#" data-slide-index="0">menu1</a>
+			<a href="#" data-slide-index="1">menu2</a>
+			<a href="#" data-slide-index="2">menu3</a>
+			<a href="#" data-slide-index="3">menu4</a>
+		</div>
+	</div>
+
+</div>
+
+
+</body>
+</html>
