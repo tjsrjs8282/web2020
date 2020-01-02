@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>color test</title>
+	<link rel="stylesheet" href="css/reset.css">
+</head>
+
+
+<style>
+	.chair {width:1000px; height: 800px; margin:0 auto; position:relative;}
+	.chair img{width: 600px; position:absolute; top: 100px; left: 100px;}
+
+	.green{width: 50px; height: 50px; border-radius:9999px; background-color: #508e82; position: absolute; 
+	top: 200px; right: 100px; cursor: pointer; transition: all 0.3s;}
+	.blue{width: 50px; height: 50px; border-radius:9999px; background-color: #455577; position: absolute; 
+	top: 300px; right: 100px; cursor: pointer; transition: all 0.3s;}
+	
+ 	.blue:hover{transform: scale(1.2);}
+</style>
+
+
+<body>
+	<div class="chair">
+			<div class="greenchair">
+				<img src="images/1.png" alt="green">
+			</div>
+			<div class="bluechair">
+				<img src="images/2.png" alt="blue">
+			</div>
+		
+	
+       <div class="green"></div>
+       <div class="blue"></div>
+
+	</div>
+
+
+</body>
+</html>
