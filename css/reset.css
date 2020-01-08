@@ -1,0 +1,4 @@
+@charset "utf-8";
+*{margin: 0;padding: 0; list-style: none;box-sizing: border-box; }
+a:visited,a:link{text-decoration: none; color:black;}
+.clearfix:after{display:block; clear:both; content:"";}

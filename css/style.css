@@ -1,0 +1,15 @@
+@charset "utf-8";
+.header{width: 1000px; _background-color: skyblue; ,margin:0 auto;}
+.header h1{width: 125px; height: 30px; margin:0 auto; _background-color: pink;
+background-image: url(../images/naver.png); background-position: 0 0px; background-repeat: no-repeat;}
+ 
+.header a{display: block; text-align: center; text-indent: -9999px; line-height: 30px;
+}
+nav.nav{_background-color: green;}
+nav.nav ul{padding: 10px;}
+nav.nav ul li{float: left; background-image: url(../images/naver.png); }
+nav.nav ul li a{display: block; text-indent: -9999px;}
+nav.nav ul li:nth-child(1){width: 70px; height: 20px; background-position: 0 -30px; transition: 0.3s;}
+nav.nav ul li:nth-child(2){width: 57px; height: 20px; background-position: -123px -24px; transition: 0.3s;}
+nav.nav ul li:nth-child(1):hover{background-position: 0px -53px;}
+nav.nav ul li:nth-child(2):hover{background-position: -123px 0px;}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<script src="js/jquery-3.1.1.min.js"></script>
+
+<style>
+	.testSG {margin-top:50px;}
+.testSG .EXbtn {display:block; width:200px; text-align: center; height:40px; line-height:40px; 
+    background-color:#f00; color:#fff; cursor:pointer;}
+.testSG .exBox { width:200px; display:none; background-color:#ccc; height:auto; }
+.testSG .exBox li{width:100%; height:40px; line-height:40px; color:#fff; padding-left:20px; box-sizing:border-box; border-bottom:1px solid #fff;}
+</style>
+
+</head>
+<body>
+	
+<div class="testSG">
+	<div class="imgBox">
+		<span class="EXbtn" onclick="sgLove();">누르면 됩니다 꺅!</span>
+		<div class="exBox">
+			<ul>
+				<li>안녕</li>
+				<li>병신아</li>
+				<li>나는</li>
+				<li>퍼블리셔야</li>
+				<li>너도</li>
+				<li>퍼블리셔지!</li>
+	</div>
+</div>
+
+<script>
+	function sgLove (){
+			$('.exBox').stop().slideToggle('fast'); 
+		}
+</script>
+
+</body>
+</html>
+
+
+<!-- "javascript:void(0)" -->
+<!-- click="return false" -->

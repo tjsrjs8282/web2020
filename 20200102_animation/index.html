@@ -6,13 +6,13 @@
 	<link rel="stylesheet" href="css/reset.css">
 
 	<style>
-		.box0{width: 200px;height: 200px; background-color: skyblue;
+		.box0{
 			animation-name:myani; position: relative;
 			animation-duration: 2s;    /*애니메이션 작동 시간*/
-			animation-iteration-count: infinite;    /*애니메이션 반복 횟수*/
+			animation-iteration-count:1;    /*애니메이션 반복 횟수*/
 			animation-direction:alternate;    /*애니메이션 방향 왔다갔다*/
-			_animation-fill-mode:forwards;   /*끝난 부분에서 고정되도록 해줌*/
-			_animation-delay: 1s;  /*지연시간*/
+			animation-fill-mode:forwards;   /*끝난 부분에서 고정되도록 해줌*/
+			animation-delay: 2s;  /*지연시간*/
 			animation-timing-function:linear;
 		}
 		@keyframes myani{
@@ -76,7 +76,7 @@
 	</style>
 </head>
 <body>
-	<!-- <div class="box0">animation</div> -->
+	<div class="box0">animation</div>
 
 	<div class="boxWrap">
 		<div class="box01"></div>

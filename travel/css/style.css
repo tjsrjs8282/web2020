@@ -1,0 +1,107 @@
+body {font-family: 'Noto Sans KR', sans-serif;}
+.header{width:100%; height: 185px; }
+.header-img-background{width: 100%; height: 90px; background-image: url(../images/arplan_back.jpg);
+background-repeat: no-repeat; background-position: center; background-color: #0d72a8;}
+
+
+.header-TopBox{width: 980px; height: 90px; margin:0 auto;}
+
+.header-top-logo {width: 170px; height: 70px; }
+.header-top-logo img {width: 100%; height: 100%; padding-top: 5px; cursor: pointer; }
+
+.header-Menu-background{width: 100%; height: 65px; background-color: #fff; border-bottom: 5px solid #0e73a7; }
+.header-MenuBox{width: 980px; height: 65px; margin:0 auto;}
+.header-MenuBox ul{display: flex; }
+.header-MenuBox ul li{float:left; width: 100%; height: 100%; line-height:65px; text-align: center; font-size:20px; color:#14272e; border-left: 1px solid #eee; box-sizing: border-box;}
+.header-MenuBox ul li a{display: block; transition: all 0.2s;}
+.header-MenuBox ul li a:hover{color:#fff; background-color:#0e73a7;}
+.header-MenuBox ul li:last-child{border-right: 1px solid #eee;}
+
+.header-top-searchBox{position:relative; width: 300px; background-color: #fff; border-radius: 20px; height: 30px; line-height: 30px;margin-top: 30px; margin-left:100px;}
+.header-top-searchinput{position: absolute; top: 7px; left: 95px; font-size:16px; border:none; width: 160px;}
+
+.searchTxt{position: absolute; top: 0 ;left: 20px; }
+
+.searchImg {width: 15px; position:absolute; top: 0; right: 20px;}
+.searchImg img{width: 15px; cursor: pointer;}
+
+.header-top-text{line-height: 90px; font-size:25px; color:#fff; margin-left: 50px; margin-right: 7px; }
+.header-top-text span{font-weight:bold;}
+.header-sns-images ul li{float: left;}
+
+.header-sns-images ul li:last-child a img{width: 30px; margin-top: 30px; padding-left: 5px;}
+
+/*------------------------------------header 끝*/
+
+
+
+.content{width: 100%; height: 1230px; margin-top: 68px;}
+.content_background{width: 100%; height: 100%; background-image: url(../images/content_Back.jpg); background-repeat: no-repeat; background-size: cover;}
+
+.contenbBox{width: 980px; height: 100%; margin:0 auto; position: relative; }
+.content_background_png{position:absolute; right: -35%; 
+			animation-name:myani; position: relative;
+			animation-duration: 1.5s;    /*애니메이션 작동 시간*/
+			animation-iteration-count:infinite;    /*애니메이션 반복 횟수*/
+			animation-direction:alternate;    /*애니메이션 방향 왔다갔다*/  
+			animation-timing-function:linear;}
+
+@keyframes myani{
+			from{top: 140px; }
+			50%{top:148px;}
+			to{top: 158px;}
+		}
+
+.content_background_topText{position: absolute; top: 60px; right: 150px;}
+.content_background_topText h1{font-size:60px; color:#172934;}
+.content_background_topText span:after{content: ""; display: block; background-color: #172934; width: 80px; height: 5px; position: absolute; top:80px; right:3px;}
+
+.content_background_bottomText{position: absolute; top: 150px;  right: 178px;}
+.content_background_bottomText p{font-size:25px; color:#172934; font-weight: bold;}
+
+/*-------------------------content box 백그라운드 끝 */
+
+
+.content-planSearchBox{width: 480px; height: 300px; background-color: #fff; position:absolute; top: 55px; left: 0;}
+
+/*----------search*/
+
+
+
+
+.content_articleBox{width: 980px; height: 750px;  position: absolute; top: 370px; left: 0;}
+
+.content_articleBox ul li{float:left; width: 235px; height: 238px; background-color: gold; margin-right: 13.33px; margin-bottom: 18px;}
+.content_articleBox2 ul li{float:left; width: 235px; height: 238px; background-color: gold; margin-right: 13.33px;}
+.content_articleBox2 ul li:last-child{margin-right: 0;}
+
+
+.content_articleBox3 ul li{float:left; width: 235px; height: 238px; background-color: gold; margin-right: 13.33px;}
+.content_articleBox3 ul li:last-child{margin-right: 0;}
+
+.content_articleBox img{width: 100%; height: 100%;}
+
+
+
+
+
+
+
+.footer-topText{position: absolute; bottom: 70px;}
+.footer-topText ul li{margin-right: 30px;}
+.footer-topText ul li:hover{font-weight: bold; cursor: pointer;}
+.footer-bottomText{position: absolute; bottom: 20px; font-size:13px; color:#333333;}
+
+.footer-topText ul li{float:left;}
+
+
+
+
+
+
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border:none;
+    background: none;}
