@@ -26,23 +26,20 @@
 						</div>
 					</li>
 					<li>
-						<div class="header-top-searchBox">
-							<input class="header-top-searchinput" type="text" name="search">
-								<ul>
-									<li>
-										<div class="searchTxt">
-											<p>SEARCH</p>
-										</div>
-									</li>
-									<li>
-										<div class="searchImg">
-											<img src="images/search.png" alt="">
-										</div>
-									</li>
-								</ul>
-							</input>
+						<form action="#" method="post" class="form-serchbox">
+							<div class="header-top-searchBox">
+								<label for="serchText" class="searchText">SEARCH</label>
+								<input class="header-top-searchinput" type="search" name="search" placeholder="검색어를 입력하세요." style="font-size: 13px;padding: 3px; color:#585858;" id="serchText">
+									<ul>
+										<li>
+											<div class="searchImg">
+												<img src="images/search.png" alt="">
+											</div>
+										</li>
+									</ul>
+								</input>
+							</form>
 						</div>
-						
 					</li>
 					<li>
 						<div class="header-top-text">
@@ -77,15 +74,45 @@
 
 
 <div class="content">
+<!-- 	<div class="content_bigBackground_png">
+		<img src="images/bigcontent.png" alt="풍선">
+	</div> -->
+	<div class="content_airplain_png">
+		<img src="images/airplain.png" alt="비행기">
+	</div>
+	<div class="content_airplain_png2">
+		<img src="images/airplain2.png" alt="비행기">
+	</div>
+	<div class="content_reallyAir_png">
+		<img src="images/reallyAir.png" alt="비행기">
+	</div>
 	<div class="content_background">
 		<div class="contenbBox">
-			<div class="content_background_png">
-				<img src="images/content.png" alt="">
+			<div class="content_flrare_png">
+				<img src="images/flrare.png" alt="햇빛">
+			</div>
+			<div class="content_background_png3">
+				<img src="images/content3.png" alt="풍선">
+			</div>
+			<div class="content_background_png1">
+				<img src="images/content1.png" alt="풍선">
+			</div>
+			<div class="content_background_png2">
+				<img src="images/content2.png" alt="풍선">
+			</div>
+			<div class="content_background_png4">
+				<img src="images/content4.png" alt="풍선">
+			</div>
+			<div class="content_background_png5">
+				<img src="images/content5.png" alt="풍선">
 			</div>
 
 			<div class="content_background_text">
 				<div class="content_background_topText">
-					<h1>TRAVEL <span>GO</span></h1>
+					<h1>TRAVEL</h1>
+				</div>
+				<div class="content_background_topText2">
+					<h1>GO</h1>
 				</div>
 				<div class="content_background_bottomText">
 					<p>지금 여행이 떠나고 싶다면?</p>
@@ -94,39 +121,193 @@
 			</div>
 
 			<div class="content-planSearchBox">
-					planSearch
+				<ul>
+					<li><p><span>공항예약</span></p></li>
+					<li><p>호텔예약</p></li>
+					<li><p>렌트카</p></li>
+					<li><p>휴양지</p></li>
+				</ul>
 			</div>
 
 			<div class="content_articleBox">
 					<ul class="clearfix">
 						<li>
-							<img src="images/travel01.jpg" alt="">
+							<div class="content_articleBox-card1">
+								<img src="images/travel01.jpg" alt="프랑스">
+								<div class="content_articleBox-textBox1">
+									<div class="content_textBox1-rightText">
+										<p>프랑스</p>
+									</div>
+									<div class="content_textBox1-priceText">
+										<p>₩1,900,000~</p>
+									</div>
+									<div class="content_textBox1-moreBtn">
+										<img src="images/moreBtn.png" alt="더보기">
+									</div>
+								</div>
+							</div>
 						</li>
 						<li>
-							<img src="images/travel02.jpg" alt="">
+							<div class="content_articleBox-card2">
+								<img src="images/travel02.jpg" alt="프랑스">
+								<div class="content_articleBox-textBox2">
+									<div class="content_textBox2-rightText">
+										<p>일본</p>
+									</div>
+									<div class="content_textBox2-priceText">
+										<p>₩890,000~</p>
+									</div>
+									<div class="content_textBox2-moreBtn">
+										<img src="images/moreBtn.png" alt="더보기">
+									</div>
+								</div>
+							</div>
 						</li>
 					</ul>
 				<div class="content_articleBox2">
 					<ul class="clearfix">
 						<li>
-							<img src="images/travel03.jpg" alt="">
+							<div class="content_sliderWrap">
+								<ul class="slider">
+									<li>
+										<div class="content_articleBox-card3">
+											<img src="images/travel03.jpg" alt="힐톤호텔">
+											<div class="content_articleBox-textBox3">
+												<div class="content_textBox3-topText">
+													<p>HILLTON HOTEL (PARIS)</p>
+												</div>
+												<div class="content_textBox3-starimg">
+													<img src="images/fiveStar.png" alt="평점별">
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="content_articleBox-card3">
+											<img src="images/travel03.jpg" alt="힐톤호텔">
+											<div class="content_articleBox-textBox3">
+												<div class="content_textBox3-topText">
+													<p>HILLTON HOTEL (PARIS)</p>
+												</div>
+												<div class="content_textBox3-starimg">
+													<img src="images/fiveStar.png" alt="평점별">
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="content_articleBox-card3">
+											<img src="images/travel03.jpg" alt="힐톤호텔">
+											<div class="content_articleBox-textBox3">
+												<div class="content_textBox3-topText">
+													<p>HILLTON HOTEL (PARIS)</p>
+												</div>
+												<div class="content_textBox3-starimg">
+													<img src="images/fiveStar.png" alt="평점별">
+												</div>
+											</div> 
+										</div>
+									</li>
+								</ul>
+								<div class="nextBtn">
+									<img src="images/nextBtn.png" alt="다음버튼">
+								</div>
+								<div class="prevBtn">
+									<img src="images/prevBtn.png" alt="이전버튼">
+								</div>
+							</div>
 						</li>
 						<li>
-							<img src="images/travel04.jpg" alt="">
+							<div class="content_sliderWrap2">
+								<ul class="slider2">
+									<li>
+										<div class="content_articleBox-card4">
+											<img src="images/travel04.jpg" alt="디즈니랜드">
+											<div class="content_articleBox-textBox4">
+												<div class="content_textBox4-topText">
+													<p>관광명소 (디즈니랜드)</p>
+												</div>
+												<div class="content_textBox4-starimg">
+													<img src="images/fiveStar.png" alt="평점별">
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="content_articleBox-card4">
+											<img src="images/travel04.jpg" alt="디즈니랜드">
+											<div class="content_articleBox-textBox4">
+												<div class="content_textBox4-topText">
+													<p>관광명소 (디즈니랜드)</p>
+												</div>
+												<div class="content_textBox4-starimg">
+													<img src="images/fiveStar.png" alt="평점별">
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="content_articleBox-card4">
+											<img src="images/travel04.jpg" alt="디즈니랜드">
+											<div class="content_articleBox-textBox4">
+												<div class="content_textBox4-topText">
+													<p>관광명소 (디즈니랜드)</p>
+												</div>
+												<div class="content_textBox4-starimg">
+													<img src="images/fiveStar.png" alt="평점별">
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<div class="nextBtn2">
+									<img src="images/nextBtn.png" alt="다음버튼">
+								</div>
+								<div class="prevBtn2">
+									<img src="images/prevBtn.png" alt="이전버튼">
+								</div>
+							</div>
 						</li>
 						<li>
-							<img src="images/travel05.jpg" alt="">
+							<div class="content_articleBox-card5">
+								<div class="tokyoText">
+									<p>TOKYO</p>
+								</div>
+								<img src="images/travel05.jpg" alt="구름조금">
+								<div class="content_articleBox-textBox5">
+									<div class="content_textBox5-topText">
+										<p><span>20℃</span> 구름조금</p>
+									</div>
+									<div class="content_textBox5-bottomText">
+										<p>습도 60% 바람 남남동 2㎧</p>
+									</div>
+								</div>
+							</div>
 						</li>
 						<li>
-							<img src="images/travel06.jpg" alt="">
+							<div class="content_articleBox-card6">
+								<img src="images/travel06.jpg" alt="임정희님">
+								<div class="content_articleBox-textBox6">
+									<div class="content_textBox6-topText">
+										<p>facebook 여행후기</p>
+									</div>
+									<div class="content_textBox6-bottomText">
+										<p>(임정희님)</p>
+									</div>
+								</div>
+							</div>
 						</li>
 					</ul>
 				</div>
 				<div class="content_articleBox3">
 					<ul class="clearfix">
 						<li>
-							<img src="images/travel07.jpg" alt="">
+							<div class="content_articleBox-card7">
+								<img src="images/travel07.jpg" alt="">
+
+							</div>
 						</li>
+
 						<li>
 							<img src="images/travel08.jpg" alt="">
 						</li>
@@ -174,6 +355,35 @@
 
 
 <script>
+$(document).ready(function(){
+			var mySlide = $(".slider").bxSlider({
+				controls:false,
+				pager:false,
+				mode:'horizontal',
+				speed:300,
+			});
+
+			$(".nextBtn").click(function(){
+				mySlide.goToNextSlide();
+			});
+
+			$(".prevBtn").click(function(){
+			    mySlide.goToPrevSlide();
+			});
+
+			var mySlide2 = $(".slider2").bxSlider({	
+				controls:false,
+				pager:false,
+				mode:'horizontal',
+				speed:300,
+			});
+			$(".nextBtn2").click(function(){
+				mySlide2.goToNextSlide();
+			});
+			$(".prevBtn2").click(function(){
+				mySlide2.goToPrevSlide();
+			});
+		});
 
 </script>
 	

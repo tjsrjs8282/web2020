@@ -1,0 +1,21 @@
+@charset "utf-8"; 
+.blind,legend{display: block; position: absolute; left: 0; top: -9999px;}
+body{background-color: #eee; font-size: 12px;font-family: 'Nanum Gothic', sans-serif;} /*body 부분에 정해놓으면 1em이 12px이 됨 */
+fieldset{border:2px solid #dadada; background-color:#fff;}
+#wrap{width: 460px; margin:0 auto;}
+div#header{padding: 60px;}
+div#header h1{width: 240px; margin:0 auto; background-image:url(../images/pc_sp_join.png);
+background-repeat: no-repeat; background-position:0 -105px;}
+
+#header h1 a{display: block; line-height: 44px; text-indent: -9999px; /*글자 들여쓰기*/}
+
+#content fieldset .field{border-bottom: 1px solid #f0f0f0; position: relative; border-radius:5px;}  /*bb+눌르면 빠르게 1px solid #000 생성*/
+#content fieldset .field .inp-field{width: 350px; height: 49px; border:0 none; font-size:16px; color:#999; text-indent: 12px; }
+#content fieldset .field .icon{display: block; width: 97px; height: 48px; background-color: #f00; position:absolute; right: 0; bottom: 0; text-indent:-9999px;
+background-image: url(../images/icon_join3.png); background-repeat:no-repeat;}
+
+#content fieldset .field .icon.mail{background-position:0 -47px; right: 8px;}
+#content fieldset .field .icon.pass{background-position:0 -466px; right: 8px;}
+#content fieldset .field .icon.pass2{background-position:0 -516px; right: 8px;}
+
+#content .btn-submit{width: 100%; height: 59px; border: 1px solid #1eb702; background:#1eb702 url(../images/btn_join2.gif) no-repeat 50% 0; text-indent:-9999px; cursor:pointer;}

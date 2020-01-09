@@ -1,0 +1,81 @@
+#header-backround {max-width: 100%; height: 1200px; background-image: url(../images/homeBack.jpg);
+background-repeat: no-repeat; background-size: cover; background-attachment: fixed;}
+.header-topMenu {max-width: 100%;padding-top: 2.5%; margin:0 auto; padding-left: 5%;
+    padding-right: 5%; padding-bottom: 2.5%;}
+.logo-img {width: 260px; float: left;}
+.logo-img img{width: 100%; height: 100%; cursor: pointer;}
+
+.header-rightMenu ul li{float: right; margin-left: 40px; box-sizing: border-box; color:#fff;}
+.header-rightMenu ul li a:hover span{ color:#d56f03; border-bottom:3px solid #d56f03; margin-bottom: 5px;}
+.header-rightMenu ul li a{/* font-weight:bold;*/ height: 120px;display: flex; align-items: center; position: relative;}
+.header-rightMenu ul li a span {font-size: 18px; color: #fff; letter-spacing: 1px;  transition:all 0.3s;}
+
+/*--------header --------- menu 끝 */
+
+
+.header-maintitle{ max-width: 100%; height: 500px; margin: 90px 0; position: relative;}
+.header-title-MainTxt h1{display:inline-block; color: rgba(255,255,255,0.7); font-size: 110px;line-height: 100px; transform: rotate(-37deg);}
+.header-title-MainTxt{position: fixed;}
+
+.header-title-BottomBox{ width:100%;height: 500px; position:relative;}
+
+.header-title-BottomTxt{
+	position: fixed;  right: 230px;
+	animation-name:mainRightAni;
+	animation-duration: 0.8s;
+	animation-fill-mode:forwards;
+}
+@keyframes mainRightAni{
+			from{top: 550px; opacity: 0;}
+			to{ top: 500px; opacity: 1;}
+		}
+
+.header-title-BottomTxt p{ color: #ffffff; font-size: 30px; text-align: center;}
+.header-title-MoreBtn {width: 200px;height: 50px; line-height: 50px; text-align:center; border: 1px solid #eee; 
+position: fixed; right: 380px; cursor: pointer; transition: all 0.1s; color:#eee; opacity: 0;
+animation-name:moreBoxAni; 
+animation-duration: 0.8s;
+animation-fill-mode:forwards;
+animation-delay: 0.5s; }
+
+@keyframes moreBoxAni{
+			from{top: 670px; opacity: 0;}
+			to{ top: 620px; opacity: 1;}
+}
+
+.header-title-MoreBtn:hover {border: 1px solid #d56f03; color:#d56f03; box-shadow:1px 2px 10px rgba(255,255,255,0.5);}
+
+/*--------header ---------main backgound 끝 */
+
+
+.main-content {width: 100%; height: 1000px; background-color: #16191e; position: relative; }
+
+.main-contentBoxTxt{text-align: center; margin:0 auto; padding: 120px; }
+
+.main-contentBoxTxt h2 {font-size:33px; color:#eee;}
+.main-contentBoxTxt h2:after{display: block; content: ""; width: 400px; height: 3px; background-color: #eee; margin: 10px auto;}
+.main-contentBox-BottoomTxt {margin-top: 30px; }
+.main-contentBoxTxt p {font-size:19x; color:#eee; margin:10px auto; }
+/*----------content1------------------끝 */
+
+
+.main-content2-Box img{float: left; transition:all 0.3s;}
+.main-content2-Box img:hover {transform:scale(1.02); box-shadow:1px 3px 10px rgba(0,0,0,0.5);}
+
+.main-content2-Background{width: 100%; height: 600px;background-color: #3f454c; position: absolute; top: 400px;}
+.main-content2-Box{width:100% ;max-width : 1200px; margin:0 auto; padding: 120px;}
+
+.main-content2-Box h3 {color:#fafafa; font-size:24px; margin-bottom: 20px; }
+.main-content2-Box label p{margin-bottom: 7px; color:#ddd;}
+.main-content2-Box .nameInput{
+	padding:0 20px;
+    height: 45px;
+    width: 500px;
+    background-color: rgba(35,38,40,0.5);
+    font-size: 15px;
+    color: #cccccc;
+    border: 1px solid #eee; margin-bottom: 20px;}
+
+.main-content2-rightLabel{margin-left: 650px;}
+.main-content2-startBox{margin-top: 15px;cursor:pointer; width: 540px; height: 45px; background-color: #e26d4a; text-align: center; color:#fff;line-height: 45px; font-size:23px;}
+.main-content2-startBox:hover{ font-weight:bold;}
