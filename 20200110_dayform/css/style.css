@@ -25,12 +25,9 @@ background-repeat: no-repeat; background-position: center; background-color: #0d
 .header-top-text span{font-weight:bold;}
 /*--------------search end*/
 
-
-
 /*--------------sns images start*/
 .header-sns-images ul li{float: left;}
-.header-sns-images ul li a:hover img{transform: scale(1.1);}
-.header-sns-images ul li:last-child a img{width: 30px; padding-top: 30px; padding-left: 5px;}
+.header-sns-images ul li:last-child a img{width: 30px; margin-top: 30px; padding-left: 5px;}
 /*--------------sns images end*/
 
 /*----------------------------------------------------------------header 끝*/
@@ -39,20 +36,21 @@ background-repeat: no-repeat; background-position: center; background-color: #0d
 .content{width: 100%; height: 1230px; margin-top: 68px; position: relative; overflow: hidden;}
 .content_background{width: 100%; height: 100%; background-image: url(../images/content_Back.jpg); background-repeat: no-repeat; background-size: cover;}
 
-.contentBox{width: 980px; height: 100%; margin:0 auto; position: relative; }
+.contenbBox{width: 980px; height: 100%; margin:0 auto; position: relative; }
 
 .content_flrare_png{position:absolute; right: 50px; top: 350px; opacity:0; z-index: 50;
 			animation-name:flrare1; 
 			animation-duration: 3s;    /*애니메이션 작동 시간*/
 			animation-iteration-count:infinite;    /*애니메이션 반복 횟수*/
-		}
+			/*animation-fill-mode:forwards; */
+			/*animation-direction:alternate;    /*애니메이션 방향 왔다갔다*/ 
+			/*animation-timing-function:linear;*/}
 @keyframes flrare1{
 			from{  right: 50px; top: 350px; opacity:0;}
 			50%{right: 50px; top: 350px; opacity:0.7;}
 			to{ right: 50px; top: 350px; opacity:0;}
 		}
-
-.content_balloonHouse_png{position:absolute; left:1700px;
+.content_balloonHouse_png{position:absolute; left:2000px;
 			animation-name:balloonHouse; 
 			animation-duration: 100s;    /*애니메이션 작동 시간*/
 			animation-iteration-count:infinite;    /*애니메이션 반복 횟수*/
@@ -60,14 +58,16 @@ background-repeat: no-repeat; background-position: center; background-color: #0d
 			/*animation-direction:alternate;    /*애니메이션 방향 왔다갔다*/ 
 			animation-timing-function:linear;}
 @keyframes balloonHouse{
-			from{left:1700px; bottom: -100px;}
-			to{left:1700px;  bottom: 1000px;  transform: rotate(3deg); }
+			from{left:2000px; bottom: -100px;}
+			to{left:2000px;  bottom: 1000px;  transform: rotate(3deg); }
 		}
 
 .content_airplain_png{position:absolute; left: -250px;
 			animation-name:airplain; 
 			animation-duration: 100s;    /*애니메이션 작동 시간*/
 			animation-iteration-count:infinite;    /*애니메이션 반복 횟수*/
+			/*animation-fill-mode:forwards; */
+			/*animation-direction:alternate;    /*애니메이션 방향 왔다갔다*/ 
 			animation-timing-function:linear;}
 @keyframes airplain{
 			from{top:450px; left: -300px;}
@@ -79,6 +79,8 @@ background-repeat: no-repeat; background-position: center; background-color: #0d
 			animation-name:airplain2; 
 			animation-duration: 100s;    /*애니메이션 작동 시간*/
 			animation-iteration-count:infinite;    /*애니메이션 반복 횟수*/
+			/*animation-fill-mode:forwards; */
+			/*animation-direction:alternate;    /*애니메이션 방향 왔다갔다*/ 
 			animation-timing-function:linear;
 			animation-delay: 30s;}
 @keyframes airplain2{
@@ -90,35 +92,14 @@ background-repeat: no-repeat; background-position: center; background-color: #0d
 .content_reallyAir_png{position:absolute; left: -800px; bottom: -500px; transform: scale(0.1);
 			animation-name:realAirplain; 
 			animation-duration: 3.5s;    /*애니메이션 작동 시간*/
-			animation-iteration-count:1;    /*애니메이션 반복 횟수*/ 
+			animation-iteration-count:1;    /*애니메이션 반복 횟수*/
+			/*animation-fill-mode:forwards; */
+			/*animation-direction:alternate;    /*애니메이션 방향 왔다갔다*/ 
 			animation-timing-function:linear;
 			animation-delay:5s;}
 @keyframes realAirplain{
 			from{bottom: -500px; left: -800px;}
-			to{bottom: 1500px;  left: 1600px; transform: rotate(-40deg);transform: scale(3)}
-		}
-
-.content_reallyAir2_png{position:absolute; left: -200px; bottom: 350px; transform: scale(0.2);
-			animation-name:realAirplain2; 
-			animation-duration: 50s;    /*애니메이션 작동 시간*/
-			animation-iteration-count:infinite;    /*애니메이션 반복 횟수*/
-			/*animation-fill-mode:forwards; */
-			/*animation-direction:alternate;    /*애니메이션 방향 왔다갔다*/ 
-			/*animation-timing-function:linear;*/
-			animation-delay:25s;}
-@keyframes realAirplain2{
-			from{bottom: 350px; left: -200px;}
-			to{bottom: 500px;  left:9999px; transform: rotate(2deg);transform: scale(2.5)}
-		}
-
-.content_reallyAir3_png{position:absolute; right: -200px; bottom: 750px; transform: scale(0.1);
-			animation-name:realAirplain3; 
-			animation-duration: 50s;    /*애니메이션 작동 시간*/
-			animation-iteration-count:infinite;    /*애니메이션 반복 횟수*/
-			animation-delay:10s;}
-@keyframes realAirplain3{
-			from{bottom: 750px; right: -200px;}
-			to{bottom: 900px;  right:9999px; transform: rotate(-2deg);transform: scale(3)}
+			to{bottom: 1500px;  left: 1600px; transform: rotate(-40deg);transform: scale(2.5)}
 		}
 
 .content_background_png1{position:absolute; right: 25%; 
@@ -178,19 +159,6 @@ background-repeat: no-repeat; background-position: center; background-color: #0d
 			to{top: -100px;}
 		}
 
-.content_background_png6{position:absolute; left: -50%; 
-			animation-name:balloon6;
-			animation-duration: 5s;    /*애니메이션 작동 시간*/
-			animation-iteration-count:infinite;    /*애니메이션 반복 횟수*/
-			animation-direction:alternate;    /*애니메이션 방향 왔다갔다*/  
-			animation-timing-function:linear;}
-@keyframes balloon6{
-			from{top:650px; }
-			30%{top:600px; left: -40%;  transform: rotate(20deg);}
-			60%{top:580px; left: -35%;  transform: rotate(10deg);}
-			to{top: 630px; left: -45%;transform: rotate(-5deg);}
-		}
-
 .content_background_topText{position: absolute; top: 60px; letter-spacing: 1px; 
 	animation-name:topTextAni; 
 			animation-duration: 1s;    /*애니메이션 작동 시간*/  
@@ -236,36 +204,13 @@ animation-name:bottomTextAni;
 /*----------------------------------------------------------------background 끝*/
 
 /*--------------airplan Search box start*/
-.content-planSearchBox{width: 135px; height: 300px; position:absolute; top: 55px; left: 0;}
-.sliderWrap{width: 345px; height: 300px; background-color:#fff; position:absolute; top: 55px;left: 135px;}
-
-.planSearchBox-Btn ul{display: flex; flex-direction: column;}
-.planSearchBox-Btn ul li { width: 135px; height: 75px; background-color: #0099cb; cursor: pointer; line-height: 75px; text-align: center; color: #fff; font-weight:bold;}
-.planSearchBox-Btn ul > li:nth-child(1){background-color:#006599;}
-.planSearchBox-Btn ul > li:nth-child(2){background-color:#006599;}
-.planSearchBox-Btn ul li:hover{background-color: #fff; color: #000;}
-
-fieldset{border:0 none; padding-left: 10px;}
-fieldset li{margin-bottom: 5px;}
-	legend{display: block; position: absolute; left: 0; top:-9999px;}
-	.f_layer{width: 350px; margin:0 auto;}
-	.f_layer fieldset label{display: block; padding:5px 0;}
-	.f_layer fieldset #golo{display: block; width: 322px; height: 35px; font-size:1em; text-indent: 8px; border-radius: 5px;}
-	#cgrade{display: block; width: 155px; height: 35px; font-size:1em; text-indent: 8px; border-radius: 5px;}
-
-	.sleft,
-	.sright{float:left; width: 155px}
-	.sleft{margin-right: 10px;}
-	.sright{ }
-
-	.sleft input,
-	.sright input{width: 155px; border-radius: 5px; border :1px solid #aaa; height: 35px; text-indent:8px; font-size:1.2em;}
-
-	.slider3 .searchBtn{position:relative; cursor:pointer; margin: 15px 10px; width: 322px; height: 35px; line-height:35px;font-size:1em; text-indent: 8px; border-radius: 5px; background-color:#ea4f1f; text-align: center; color: #fff;}
-	.searchBtn img{width: 15px; height: 15px; position:absolute; top: 11px; left:115px; }
+.content-planSearchBox{width: 480px; height: 300px; background-color: #fff; position:absolute; top: 55px; left: 0;}
+.content-planSearchBox ul li {width: 135px; height: 75px; background-color: #0099cb; cursor: pointer;}
+.content-planSearchBox ul > li:nth-child(1){background-color:#fff;}
+.content-planSearchBox ul > li:nth-child(2){background-color:#006599;}
+.content-planSearchBox > ul > li > p{line-height: 75px; text-align: center; color:#fff;}
+.content-planSearchBox > ul > li > p > span{display: block;  color: #585858;}
 /*--------------airplan Search box end*/
-
-
 
 /*--------------article box 틀(box) start*/
 .content_articleBox{width: 980px; height: 750px;  position: absolute; top: 370px; left: 0;}
@@ -346,6 +291,7 @@ fieldset li{margin-bottom: 5px;}
 
 .content_articleBox-textBox5{cursor:pointer; width: 100%; height: 70px; background-color:rgba(0,0,0,0.5); position: absolute; bottom: 0; }
 .content_articleBox-textBox5:hover {font-weight:bold; background-color:rgba(0,0,0,0.7)}
+/*.content_articleBox-textBox5:hover img{transform:scale(1.1);}*/
 .content_textBox5-topText{position: absolute; top: 10px; left: 20px; color:#eee;}
 .content_textBox5-bottomText{position: absolute; bottom: 12px; left: 20px; color:#eee;}
 
@@ -356,9 +302,10 @@ fieldset li{margin-bottom: 5px;}
 
 .content_articleBox-card6{width: 100%; height: 238px; position: relative; overflow:hidden;}
 .content_articleBox-card6 img:hover {transform:scale(1.07);}
+
 .content_articleBox-textBox6{cursor:pointer; width: 100%; height: 70px; background-color:#44619d; position: absolute; bottom: 0; }
 .content_articleBox-textBox6:hover {font-weight:bold; background-color:#44619d;}
-
+/*.content_articleBox-textBox6:hover img{transform:scale(1.07);}*/
 .content_textBox6-topText{position: absolute; top: 10px; left: 20px; color:#eee;}
 .content_textBox6-bottomText{position: absolute; bottom: 12px; left: 20px; color:#eee;}
 
@@ -367,77 +314,27 @@ fieldset li{margin-bottom: 5px;}
 /*-----------------card end 6 */
 
 .content_articleBox-card7{width: 100%; height: 238px; position: relative; overflow:hidden;}
-.content_articleBox-card7:hover >img{transform:scale(1.07);}
-.content_articleBox-card7:hover .card7-hoverBox {display: block;}
-.content_articleBox-card7:hover .card7-hoverText { top: 20px;}
-.card7-hoverBox img:hover{transform: rotate(180deg);}
+.content_articleBox-card7 img:hover {transform:scale(1.07);}
 
-.card7-hoverBox{width: 100%; height: 238px; background-color: rgba(24,123,160,0.4); position: absolute; top: 0; display: none; }
-.card7-hoverBox img{width: 40px; height: 40px; position: absolute; top: 100px; left: 100px;  transition:0.6s; cursor: pointer;}
 
-.card7-hoverText{position: absolute; top: -70px; left: 33px; text-align:center; color:#fff; transition:0.5s;}
-.card7-hoverText img{width: 30px; height: 30px; position: absolute; top:-3px; left: 15px;}
-.card7-hoverText p{font-size: 14px; margin-bottom: -3px;}
-/*-----------------card end 7 */
 
-.content_articleBox-card8{width: 100%; height: 238px; position: relative; overflow:hidden;}
-.content_articleBox-card8:hover >img{transform:scale(1.07);}
-.content_articleBox-card8:hover .card8-hoverBox {display: block;}
-.content_articleBox-card8:hover .card8-hoverText { bottom: 25px;}
-.card8-hoverBox img:hover{transform: rotate(180deg);}
 
-.card8-hoverBox{width: 100%; height: 238px; background-color: rgba(78,41,10,0.5); position: absolute; top: 0; display: none; }
-.card8-hoverBox img{width: 40px; height: 40px; position: absolute; top: 100px; left: 100px;  transition:0.6s; cursor: pointer;}
 
-.card8-hoverText{position: absolute; bottom:-70px; left: 33px; text-align:center; color:#fff; transition:0.5s;}
-.card8-hoverText img{width: 30px; height: 30px; position: absolute; top:-3px; left: 15px;}
-.card8-hoverText p{font-size: 14px; margin-bottom: -3px;}
-/*-----------------card end 8 */
-
-.content_articleBox-card9{width: 100%; height: 238px; position: relative; overflow:hidden;}
-.content_articleBox-card9:hover >img{transform:scale(1.07);}
-.content_articleBox-card9:hover .card9hoverBox {display: block;}
-.content_articleBox-card9:hover .card9hoverText { bottom: 25px;}
-.card9hoverBox img:hover{transform: rotate(180deg);}
-
-.card9hoverBox{width: 100%; height: 238px; background-color: rgba(18,20,102,0.5); position: absolute; top: 0; display: none; }
-.card9hoverBox img{width: 40px; height: 40px; position: absolute; top: 100px; left: 100px;  transition:0.6s; cursor: pointer;}
-
-.card9hoverText{position: absolute; bottom:-70px; left: 33px; text-align:center; color:#fff; transition:0.5s;}
-.card9hoverText img{width: 30px; height: 30px; position: absolute; top:-3px; left: 15px;}
-.card9hoverText p{font-size: 14px; margin-bottom: -3px;}
-/*-----------------card end 9 */
-
-.content_articleBox-card10{width: 100%; height: 238px; position: relative; overflow:hidden;}
-.content_articleBox-card10:hover >img{transform:scale(1.07);}
-.content_articleBox-card10:hover .card10hoverBox {display: block;}
-.content_articleBox-card10:hover .card10hoverText { top: 20px;}
-.card10hoverBox img:hover{transform: rotate(180deg);}
-
-.card10hoverBox{width: 100%; height: 238px; background-color: rgba(32,117,10,0.5); position: absolute; top: 0; display: none; }
-.card10hoverBox img{width: 40px; height: 40px; position: absolute; top: 100px; left: 100px;  transition:0.6s; cursor: pointer;}
-
-.card10hoverText{position: absolute; top:-70px; left: 33px; text-align:center; color:#fff; transition:0.5s;}
-.card10hoverText img{width: 30px; height: 30px; position: absolute; top:-3px; left: 15px;}
-.card10hoverText p{font-size: 14px; margin-bottom: -3px;}
-/*-----------------card end 10 */
-
-/*-----------------------------------------article card 10ea end */
-
-/*-----------------------------footer start */
 .footer-topText{position: absolute; bottom: 70px;}
 .footer-topText ul li{margin-right: 30px;}
 .footer-topText ul li:hover{font-weight: bold; cursor: pointer;}
 .footer-bottomText{position: absolute; bottom: 20px; font-size:13px; color:#333333;}
 .footer-topText ul li{float:left;}
-/*-----------------------------footer end */
+/*----------------------------------footer end */
+
+
 
 
 
 /*-----------------------slider box 시작 */
 .bx-wrapper {
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	border:none;
-	background: none;}
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border:none;
+    background: none;}

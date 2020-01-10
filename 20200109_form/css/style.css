@@ -1,7 +1,7 @@
 @charset "utf-8"; 
 .blind,legend{display: block; position: absolute; left: 0; top: -9999px;}
 body{background-color: #eee; font-size: 12px;font-family: 'Nanum Gothic', sans-serif;} /*body 부분에 정해놓으면 1em이 12px이 됨 */
-fieldset{border:2px solid #dadada; background-color:#fff;}
+fieldset{border:2px solid #dadada; background-color:#fff; margin-bottom: 10px;}
 #wrap{width: 460px; margin:0 auto;}
 div#header{padding: 60px;}
 div#header h1{width: 240px; margin:0 auto; background-image:url(../images/pc_sp_join.png);
@@ -18,4 +18,22 @@ background-image: url(../images/icon_join3.png); background-repeat:no-repeat;}
 #content fieldset .field .icon.pass{background-position:0 -466px; right: 8px;}
 #content fieldset .field .icon.pass2{background-position:0 -516px; right: 8px;}
 
+
 #content .btn-submit{width: 100%; height: 59px; border: 1px solid #1eb702; background:#1eb702 url(../images/btn_join2.gif) no-repeat 50% 0; text-indent:-9999px; cursor:pointer;}
+
+.btn-label{display: block; width: 212px; height: 31px; border: 1px solid #dcdcdc; position:absolute; top: 8px; text-align:center; line-height:31px; background-color: #fff; cursor:pointer;}
+
+.w458{width: 458px !important;}
+.w130{width: 130px !important;}
+.w145{width: 145px !important;}
+
+.btn-label.male{left: 12px; }
+.field .btn-label.female{left:231px;}
+.btn-radio {height: 49px;}
+#content fieldset .field.btn-radio input{position: relative; left: 50px; top: 14px;}
+
+#content fieldset .field.birth input{float: left;}
+#content fieldset .field.birth select{float: left; width: 110px; height: 29px; border: 0 none; font-size:15px; line-height: 29px; background: url(../images/sel_arr.gif) no-repeat 100% 50%; -webkit-appearance:none; margin-top: 10px;}
+.field-wall {float: left; width: 0; height: 29px; border-right:1px solid #cdcdcd; text-indent: -9999px; margin-top: 10px;}
+
+.field.birth label{float: left; width: 53px;  border-right: 1px solid #efefef; text-align: center; line-height: 49px; background-color: #f7f7f7; color:#999;}

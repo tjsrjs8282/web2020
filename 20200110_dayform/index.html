@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>tour form</title>
+	<link rel="stylesheet" href="css/reset.css">
+<style>
+	fieldset{border:0 none;}
+	legend{display: block; position: absolute; left: 0; top:-9999px;}
+	.f_layer{width: 400px; margin:0 auto;}
+	.f_layer fieldset label{display: block; padding:5px 0;}
+	.f_layer fieldset select{display: block; width: 100%; height: 40px; font-size:1em; text-indent: 8px; border-radius: 5px;}
+	
+	.sleft,
+	.sright{float:left; width: 195px}
+	.sleft{margin-right: 10px;}
+	.sright{ }
+
+	.sleft input,
+	.sright input{width: 100%; border-radius: 5px; border :1px solid #aaa; height: 40px; text-indent:8px; font-size:1.2em;}
+</style>
+
+
+</head>
+<body>
+	<form action="update.php" class="f_layer">
+		<fieldset>
+			<legend>여행일정</legend>
+			<label for=""></label>
+			<ul>
+				<li>
+					<label for="golo">가고싶은 나라를 선택하세요.</label>
+					<select name="nara" id="golo">
+						<option value="">선택하세요</option>
+						<option value="미국">태국</option>
+						<option value="한국">베트남</option>
+						<option value="일본">필리핀</option>
+					</select>
+				</li>
+				<li>
+					<div class="sleft">
+						<label for="sdate">출발일</label>
+						<input type="date" id="sdate">
+					</div>
+					<div class="sright">
+						<label for="sdate">출발일</label>
+						<input type="date" id="sdate">
+					</div>
+				</li>
+				<li>
+					<div class="sleft">
+						<label for="cgrede">좌석등급</label>
+						<select name="cgrade" id="cgrade">
+							<option value="비지니스">비지니스</option>
+							<option value="이코노미">이코노미</option>
+					
+						</select>
+					</div>
+					<div class="sright">
+						<label for="nun">인원</label>
+						<input type="number" id="num" placeholder="1">
+					</div>
+				</li>
+			</ul>
+		</fieldset>
+	</form>
+</body>
+</html>
