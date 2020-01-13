@@ -52,16 +52,16 @@ background-repeat: no-repeat; background-position: center; background-color: #0d
 			to{ right: 50px; top: 350px; opacity:0;}
 		}
 
-.content_balloonHouse_png{position:absolute; left:1700px;
+.content_balloonHouse_png{position:absolute; left:1650px;
 			animation-name:balloonHouse; 
-			animation-duration: 100s;    /*애니메이션 작동 시간*/
+			animation-duration: 95s;    /*애니메이션 작동 시간*/
 			animation-iteration-count:infinite;    /*애니메이션 반복 횟수*/
 			/*animation-fill-mode:forwards; */
 			/*animation-direction:alternate;    /*애니메이션 방향 왔다갔다*/ 
 			animation-timing-function:linear;}
 @keyframes balloonHouse{
-			from{left:1700px; bottom: -100px;}
-			to{left:1700px;  bottom: 1000px;  transform: rotate(3deg); }
+			from{left:1650px; bottom: -200px;}
+			to{left:1650px;  bottom: 1000px;  transform: rotate(3deg); }
 		}
 
 .content_airplain_png{position:absolute; left: -250px;
@@ -126,7 +126,7 @@ background-repeat: no-repeat; background-position: center; background-color: #0d
 			animation-duration: 4s;    /*애니메이션 작동 시간*/
 			animation-iteration-count:infinite;    /*애니메이션 반복 횟수*/
 			animation-direction:alternate;    /*애니메이션 방향 왔다갔다*/  
-			animation-timing-function:linear;}
+			animation-timing-function:cubic-bezier(0.56, 0.22, 0.63, 1.11);}
 @keyframes balloon{
 			from{top: 240px; }
 			50%{top:230px; transform: rotate(2deg);}
@@ -137,7 +137,7 @@ background-repeat: no-repeat; background-position: center; background-color: #0d
 			animation-duration: 2.5s;    /*애니메이션 작동 시간*/
 			animation-iteration-count:infinite;    /*애니메이션 반복 횟수*/
 			animation-direction:alternate;    /*애니메이션 방향 왔다갔다*/  
-			animation-timing-function:linear;}
+			animation-timing-function:cubic-bezier(0.46, -0.01, 0.5, 1.04);}
 @keyframes balloon2{
 			from{top:210px;}
 			50%{top:235px; transform: rotate(-4deg);}
@@ -149,18 +149,19 @@ background-repeat: no-repeat; background-position: center; background-color: #0d
 			animation-duration: 5s;    /*애니메이션 작동 시간*/
 			animation-iteration-count:infinite;    /*애니메이션 반복 횟수*/
 			animation-direction:alternate;    /*애니메이션 방향 왔다갔다*/  
-			animation-timing-function:linear;}
+			animation-timing-function:cubic-bezier(0.38, 0.06, 0.57, 1.16);
+}
 @keyframes balloon3{
 			from{top:30px;}
-			50%{top:40px;}
-			to{top: 50px;transform:rotate(2deg)}
+			50%{top:40px; transform:rotate(1deg);}
+			to{top: 55px; transform:rotate(-3deg);}
 		}
 .content_background_png4{position:absolute; left: -30%; 
 			animation-name:balloon4;
 			animation-duration: 5s;    /*애니메이션 작동 시간*/
 			animation-iteration-count:infinite;    /*애니메이션 반복 횟수*/
 			animation-direction:alternate;    /*애니메이션 방향 왔다갔다*/  
-			animation-timing-function:linear;}
+			animation-timing-function:cubic-bezier(0.3, -0.06, 0.71, 1.15);}
 @keyframes balloon4{
 			from{top:860px; }
 			50%{top:870px; transform: rotate(2deg);}
@@ -171,7 +172,7 @@ background-repeat: no-repeat; background-position: center; background-color: #0d
 			animation-duration: 10s;    /*애니메이션 작동 시간*/
 			animation-iteration-count:infinite;    /*애니메이션 반복 횟수*/
 			animation-direction:alternate;    /*애니메이션 방향 왔다갔다*/  
-			animation-timing-function:linear;}
+			animation-timing-function:cubic-bezier(0.49, 0.14, 0.52, 1.23);}
 @keyframes balloon5{
 			from{top:-110px; }
 			50%{top:-180px; transform: rotate(35deg);}
@@ -180,15 +181,15 @@ background-repeat: no-repeat; background-position: center; background-color: #0d
 
 .content_background_png6{position:absolute; left: -50%; 
 			animation-name:balloon6;
-			animation-duration: 5s;    /*애니메이션 작동 시간*/
+			animation-duration: 10s;    /*애니메이션 작동 시간*/
 			animation-iteration-count:infinite;    /*애니메이션 반복 횟수*/
 			animation-direction:alternate;    /*애니메이션 방향 왔다갔다*/  
-			animation-timing-function:linear;}
+			animation-timing-function:cubic-bezier(0.54, -0.04, 0.63, 1.21);}
 @keyframes balloon6{
 			from{top:650px; }
-			30%{top:600px; left: -40%;  transform: rotate(20deg);}
-			60%{top:580px; left: -35%;  transform: rotate(10deg);}
-			to{top: 630px; left: -45%;transform: rotate(-5deg);}
+			30%{top:610px; left: -45%;  transform: rotate(15deg);}
+			60%{top:590px; left: -40%;  transform: rotate(10deg);}
+			to{top: 630px; left: -42%;transform: rotate(0deg);}
 		}
 
 .content_background_topText{position: absolute; top: 60px; letter-spacing: 1px; 

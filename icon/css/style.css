@@ -1,19 +1,37 @@
 body{margin: 0; font-size:2rem;}
 
+@keyframes loading{
+	to{background-position:-800px 0;}
+}
+
 @keyframes youtube{
 	to{background-position:-900px 0;}
 }
 @keyframes facebook{
 	to{background-position:-900px 0;}
 }
+@keyframes insta{
+	to{background-position:-900px 0;}
+}
 
 
-.youtybe{transform:translate(50%, 0%); overflow: hidden; width: 100px; height: 100px; background: url(../images/youtube_animation.png) no-repeat 0 0; text-indent:200%;
-animation:youtube 1s infinite steps(9);}
+.sprite_icon{cursor: pointer; display: flex;}
+
+.loading{overflow: hidden; width: 100px; height: 119px; background: url(../images/loading2.png) no-repeat 0 0; text-indent:200%;
+}
+.loading:hover{animation:loading .8s infinite steps(8);}
+
+.youtube{overflow: hidden; width: 100px; height: 100px; background: url(../images/youtube_animation.png) no-repeat 0 0; text-indent:200%;
+}
+.youtube:hover{animation:youtube .8s infinite steps(9);}
 
 .facebook{overflow: hidden; width: 100px; height: 100px; background: url(../images/face2.png) no-repeat 0 0; text-indent:200%;
-animation:facebook 1s infinite steps(9);}
+}
+.facebook:hover{animation:facebook .8s infinite steps(9);}
 
+.insta{overflow: hidden; width: 100px; height: 100px; background: url(../images/insta_icon.png) no-repeat 0 0; text-indent:200%;
+}
+.insta:hover{animation:insta .8s infinite steps(9);}
 
 h1{width: 15ch; font-size:25px; overflow: hidden;  border-right:0.05rem solid transparent; white-space: nowrap; animation:typing 2s steps(15), caret 1s steps(1) infinite;}
 @keyframes typing{
