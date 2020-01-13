@@ -2,15 +2,16 @@ body {font-family: 'Noto Sans KR', sans-serif;}
 .header{width:100%; height: 185px; }
 .header-img-background{width: 100%; height: 90px; background-image: url(../images/arplan_back.jpg);
 background-repeat: no-repeat; background-position: center; background-color: #0d72a8;}
-.header-TopBox{width: 980px; height: 90px; margin:0 auto;}
+.header-TopBox{width: 980px; min-width: 980px; height: 90px; margin:0 auto;}
 .header-top-logo {width: 170px; height: 70px; }
 .header-top-logo img {width: 100%; height: 100%; padding-top: 5px; cursor: pointer; }
 
 .header-Menu-background{width: 100%; height: 65px; background-color: #fff; border-bottom: 5px solid #0e73a7; }
-.header-MenuBox{width: 980px; height: 65px; margin:0 auto;}
+.header-MenuBox{width: 980px; min-width: 980px; height: 65px; margin:0 auto;}
 .header-MenuBox ul{display: flex; }
 .header-MenuBox ul li{float:left; width: 100%; height: 100%; line-height:65px; text-align: center; font-size:20px; color:#14272e; border-left: 1px solid #eee; box-sizing: border-box;}
 .header-MenuBox ul li a{display: block; transition: all 0.2s;}
+.topMenuBtn.active{color: #fff; background-color:#0e73a7; }
 .header-MenuBox ul li a:hover{color:#fff; background-color:#0e73a7;}
 .header-MenuBox ul li:last-child{border-right: 1px solid #eee;}
 /*--------------header 틀Box end*/
@@ -241,9 +242,10 @@ animation-name:bottomTextAni;
 .sliderWrap{width: 345px; height: 300px; background-color:#fff; position:absolute; top: 55px;left: 135px;}
 
 .planSearchBox-Btn ul{display: flex; flex-direction: column;}
-.planSearchBox-Btn ul li { width: 135px; height: 75px; background-color: #0099cb; cursor: pointer; line-height: 75px; text-align: center; color: #fff; font-weight:bold;}
-.planSearchBox-Btn ul > li:nth-child(1){background-color:#006599;}
-.planSearchBox-Btn ul > li:nth-child(2){background-color:#006599;}
+.SearchBtn {position:relative; text-indent:30px; width: 135px; height: 75px; background-color: #0099cb; cursor: pointer; line-height: 75px; text-align: center; color: #fff; font-weight:bold;}
+.SearchBtn img{width: 30px; position: absolute;left: 15px; top: 20px;}
+.SearchBtn_icon{display: none;}
+.SearchBtn.active {color:#000; background-color: #fFF;}
 .planSearchBox-Btn ul li:hover{background-color: #fff; color: #000;}
 
 fieldset{border:0 none; padding-left: 10px;}

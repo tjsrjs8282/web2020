@@ -26,14 +26,33 @@ background-image: url(../images/icon_join3.png); background-repeat:no-repeat;}
 .w458{width: 458px !important;}
 .w130{width: 130px !important;}
 .w145{width: 145px !important;}
+.w205{width: 205px !important;}
+.w303{width: 303px !important;}
 
 .btn-label.male{left: 12px; }
 .field .btn-label.female{left:231px;}
 .btn-radio {height: 49px;}
 #content fieldset .field.btn-radio input{position: relative; left: 50px; top: 14px;}
+#content fieldset .field.birth input,
+#content fieldset .field.confirm input{float: left;}
 
-#content fieldset .field.birth input{float: left;}
-#content fieldset .field.birth select{float: left; width: 110px; height: 29px; border: 0 none; font-size:15px; line-height: 29px; background: url(../images/sel_arr.gif) no-repeat 100% 50%; -webkit-appearance:none; margin-top: 10px;}
-.field-wall {float: left; width: 0; height: 29px; border-right:1px solid #cdcdcd; text-indent: -9999px; margin-top: 10px;}
+#content fieldset .field.birth select,
+#content fieldset .field.confirm select{padding-left:15px;float: left; width: 110px; height: 29px; border: 0 none; font-size:15px; line-height: 29px; background: url(../images/sel_arr.gif) no-repeat 100% 50%; -webkit-appearance:none; margin-top: 10px;}
+.user-num{text-indent: 40px;}
+.field-wall 
+{float: left; width: 0; height: 29px; border-right:1px solid #cdcdcd; text-indent: -9999px; margin-top: 10px;}
 
 .field.birth label{float: left; width: 53px;  border-right: 1px solid #efefef; text-align: center; line-height: 49px; background-color: #f7f7f7; color:#999;}
+
+.btn-click{width: 99px; height: 31px; border: 1px solid #dcdcdc; position: absolute; top: 7px; right: 15px;}
+
+address{font-style:normal;}
+
+
+#footer{text-align:center; padding: 48px 0 80px;}
+#footer .btm-menu ul{margin-left: 20px;}
+#footer .btm-menu li{float: left;}
+#footer .btm-menu ul li a {display: block; color: #333; padding:0 8px; line-height: 12px; }
+#footer address{padding: 20px;}
+#footer address strong a {display:inline-block; width: 63px; text-indent:-9999px; height:11px; background-image: url(../images/ci_naver.gif);}
+#footer address span a {font-weight: bold;}

@@ -60,12 +60,12 @@
 	<div class="header-Menu-background">
 		<div class="header-MenuBox">
 			<ul>
-				<li><a href="#">여행도시</a></li>
-				<li><a href="#">호텔예약</a></li>
-				<li><a href="#">렌트카</a></li>
-				<li><a href="#">여행TIP</a></li>
-				<li><a href="#">회사소개</a></li>
-				<li><a href="#">커뮤니티</a></li>
+				<li><a href="index.html#" class="topMenuBtn active" >여행도시</a></li>
+				<li><a href="sub.html#" class="topMenuBtn" >호텔예약</a></li>
+				<li><a href="sub.html#" class="topMenuBtn" >렌트카</a></li>
+				<li><a href="sub.html#" class="topMenuBtn" >여행TIP</a></li>
+				<li><a href="sub.html#" class="topMenuBtn" >회사소개</a></li>
+				<li><a href="sub.html#" class="topMenuBtn" >커뮤니티</a></li>
 			</ul>
 		</div>
 	</div>
@@ -141,10 +141,18 @@
 			<div class="content-planSearchBox">
 				<div class="planSearchBox-Btn">
 					<ul class="clearfix">
-						<li>공항예약</li>
-						<li>호텔예약</li>
-						<li>렌트카</li>
-						<li>휴양지</li>
+						<li class="SearchBtn">
+							<img src="images/searchBtn1.png" alt="" class="SearchBtn_icon">
+							<img src="images/searchBtnClick1.png" alt="">공항예약</li>
+						<li class="SearchBtn">
+							<img src="images/searchBtn2.png" alt="">
+							<img src="images/searchBtnClick2.png" alt="">호텔예약</li>
+						<li class="SearchBtn">
+							<img src="images/searchBtn3.png" alt="">
+							<img src="images/searchBtnClick3.png" alt="">렌트카</li>
+						<li class="SearchBtn">
+							<img src="images/searchBtn4.png" alt="">
+							<img src="images/searchBtnClick4.png" alt="">휴양지</li>
 					</ul>
 				</div>
 			</div>
@@ -652,7 +660,21 @@ $(document).ready(function(){
 				mySlide3.goToNextSlide();
 			});
 
-		});
+			$('.SearchBtn').click(function(){
+				$('.SearchBtn').removeClass('active');
+				$(this).addClass('active'); 
+			});
+
+			$('.topMenuBtn').click(function(){
+				$('.topMenuBtn').removeClass('active');
+				$(this).addClass('active'); 
+			});
+
+			$('.topMenuBtn').click(function(){
+				$('.SeachBtn_icon').removeClass('active');
+				$(this).addClass('active'); 
+			});
+		}); 
 
 </script>
 	
