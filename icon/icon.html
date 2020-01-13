@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+	<div class="youtybe"></div>
+	<div class="facebook"></div>
+
+
+	<h1>CSS is Awesome !</h1>
+	<h1>hello~</h1>
+
+
+	<script>
+	
+		var h1Elem = document.querySelectorAll('h1');
+		h1Elem.forEach(function(h1){
+			var len = h1.textContent.length;
+			h1.style.width = len + 'ch';
+			h1.style.animationTimingFunction = 'steps(' + len + '), steps(1)';
+		});
+	</script>
+	
+</body>
+</html>

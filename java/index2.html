@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+</head>
+
+<style>
+	body{font-size:3rem;}
+	h1{background-color: gold;}
+</style>
+
+
+<body>
+	<h1>javaScript</h1>
+</body>
+
+
+
+<script>
+	var a = 100;
+
+	function sample(){
+		if (a > 0) {
+		return;
+	}
+	console.log('ㅋㅋㅋㅋ');
+    }
+
+    sample();
+
+
+
+//와 b는 더하기 함수의 매개변수(parameter)
+    function 더하기(a,b){
+    	document.write(a + b);
+    } 
+
+function 인사(이름){
+	console.log('안녕 나는', 이름, '야')
+}
+인사('선건이');
+
+
+function 더하기2(a, b){
+	document.write(a + b);
+	return a + b;  //리턴값
+}
+
+var h = (더하기2(100 , 200));
+console.log(h);
+
+
+
+document.querySelector('h1').style.height = h + 'px';
+
+
+
+
+</script>
+</html>

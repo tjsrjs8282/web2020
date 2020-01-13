@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+</head>
+
+<style>
+	body{font-size:3rem;}
+	h1{background-color: gold;}
+</style>
+
+
+<body>
+	<h1>javaScript</h1>
+</body>
+
+
+
+<script>
+
+
+//변수의 유효번위(scope)
+var a = 100; //<ㅡ전역변수
+
+
+function sample1(){
+	var b = 200;
+	// console.log('sample1에서 출력한' + a);
+	console.log('sample1에서 출력한' + b);
+}
+
+// 함수 안에서 만든 변수는 밖에서 접근 불가능
+
+// 생성자(constructor)
+function Person(username, age){
+	this.username = username;
+	this.age = age;
+	this.introduce = function(){
+		console.log('안녕? 나는' + this.username + '야. 나이는' + this.age + '살이야');
+	}
+}
+
+var p1 = new Person('동네79', 20);
+var p2 = new Person('선건이', 28);
+
+p1.introduce();
+p2.introduce();
+</script>
+</html>
