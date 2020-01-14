@@ -34,11 +34,21 @@ background-repeat: no-repeat; background-position: center; background-color: #0d
 
 /*----------------------------------------------------------------header 끝*/
 
+
 .sub_background{width: 100%; min-width: 1200px; height: 200px; background-image: url(../images/aircraft_subBack.jpg); background-size: cover; background-position: 0 -70px; background-repeat:no-repeat; margin-top: 69px;}
+.top_company{width: 980px; height: 300px; margin:0 auto; position: relative;}
+.sub_companyTopLogo{width: 450px; height: 100px; position: absolute; top: 10px; left: 270px;}
+.sub_companyTopLogo img{width: 100%;height: 100%;}
+.sub_companyTopText {font-size:40px; color:#fff; letter-spacing: 2px; position: absolute; top: 15px; left: 270px; }
+.sub_companyBottomText {font-size:20px; color:#fff; position: absolute; top: 110px;	left: 345px;}
+
 .sub_Pattern{width: 100%; height: 100%; background-image: url(../images/sub_Pattern.jpg); }
 .sub_content{width: 980px; height: 1000px; margin:0 auto; position: relative;}
 .sub_secsion{position: absolute; top: -50px;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 .sub_secsion img{width: 100%; height: 100%;}
+
+
+
 
 
 /*-----------------------------footer start */
