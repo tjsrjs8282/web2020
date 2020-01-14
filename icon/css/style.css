@@ -13,6 +13,9 @@ body{margin: 0; font-size:2rem;}
 @keyframes insta{
 	to{background-position:-900px 0;}
 }
+@keyframes pinter{
+	to{background-position:-1000px 0;}
+}
 
 
 .sprite_icon{cursor: pointer; display: flex;}
@@ -33,6 +36,13 @@ body{margin: 0; font-size:2rem;}
 }
 .insta:hover{animation:insta .8s infinite steps(9);}
 
+.pinterest{overflow: hidden; width: 100px; height: 100px; background:url(../images/pinterest_icon.png) no-repeat 0 0; text-indent:200%;}
+
+.pinterest:hover{animation:pinter .8s infinite steps(10);}
+
+
+/*--------------text animation */
+/*ch는 글자 수 의 길이  1ch = 한글자   총 15글자니까 15ch */   /*steps(15) 는 animation 동작을 15스탭으로 나눠서 실행*/ 
 h1{width: 15ch; font-size:25px; overflow: hidden;  border-right:0.05rem solid transparent; white-space: nowrap; animation:typing 2s steps(15), caret 1s steps(1) infinite;}
 @keyframes typing{
 	from{width: 0ch;}

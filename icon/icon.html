@@ -15,6 +15,7 @@
 	<div class="youtube"></div>
 	<div class="facebook"></div>
 	<div class="insta"></div>
+	<div class="pinterest"></div>
 </div>
 
 
@@ -23,13 +24,13 @@
 
 
 	<script>
-	
+							// 모든 h1을 가져옴 
 		var h1Elem = document.querySelectorAll('h1');
 		h1Elem.forEach(function(h1){
-			var len = h1.textContent.length;
+			var len = h1.textContent.length;   
 			h1.style.width = len + 'ch';
 			h1.style.animationTimingFunction = 'steps(' + len + '), steps(1)';
-		});
+		});    animationTimingFunction
 	</script>
 	
 </body>
