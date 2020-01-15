@@ -1,0 +1,24 @@
+body{font-family: 'Noto Sans', sans-serif; width: 100vw; min-width: 1000px; height: 100vh; background-image:url(../images/pc03.jpg); 
+background-size: cover;
+background-repeat: no-repeat;}
+
+section{width: 1000px; margin:0 auto;}
+svg{
+	position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 350px;
+}
+
+svg text{
+	font-size:200px; font-weight:bold; 
+	fill:rgba(0,0,0,0.2);
+	stroke-width:1px;
+	stroke:#fff;
+	stroke-linejoin:round;
+	stroke-dasharray:60;
+	animation: text_ani 1s linear infinite;
+}
+
+@keyframes text_ani{
+	100%{
+		stroke-dashoffset:120;
+	}
+}

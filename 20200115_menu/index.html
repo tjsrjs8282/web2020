@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style2.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<!-- 	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+	<script src="https://unpkg.com/swiper/js/swiper.js"></script>
+	<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script> -->
+</head>
+
+<body>
+	<div id="curtain">
+		<span></span>
+		<span></span>
+		<span></span>
+		<ul>
+			<li><a href="#">menu1</a></li>
+			<li><a href="#">menu2</a></li>
+			<li><a href="#">menu3</a></li>
+			<li><a href="#">menu4</a></li>
+			<li><a href="#">menu5</a></li>
+		</ul>
+	</div>
+	<div class="toggle" onclick="toggle()"></div>
+	
+
+
+	<script type="text/javascript">
+		function toggle(){
+			var curtain = document.getElementById('curtain');
+			curtain.classList.toggle('active')
+		}
+	</script>
+</body>
+</html>

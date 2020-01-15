@@ -4,12 +4,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
 	<title>gym</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/jquery.bxslider.css">
-	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
 	<script src="js/juery-3.1.1.min.js"></script>
-	<script src="js/juery.bxslider.js"></script>
+<!-- 	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="js/juery.bxslider.js"></script> -->
+	
 </head>
 
 <body>
@@ -31,7 +33,12 @@
 		</div>
 	<div class="header-maintitle">
 		<div class="header-title-MainTxt">
-			<h1>No Pain No Gain.</h1>
+			<sgv>
+				<symbol id="text">
+					<text text-anchor="middle" x="50%" y="50%">No Pain No Gain.</text>
+				</symbol>
+				<use xlink:href="#text"></use>
+			</sgv>
 		</div>
 		<div class="header-title-BottomBox">
 			<div class="header-title-BottomTxt">
@@ -62,11 +69,11 @@
 					<h3>Sign Up For A Free Training Session!</h3>
 					<label>
 						<p>Name</p>
-						<input class="nameInput" type="text" name="your-name" value size="40" aria-required="ture" aria-invalid="false">
+						<input class="nameInput" type="text" name="your-name" value size="40" aria-required="ture" aria-invalid="false" placeholder="Your name please.">
 					</label>
 					<label>
 						<p>E-mail</p>
-						<input class="nameInput" type="text" name="your-name" value size="40" aria-required="ture" aria-invalid="false">
+						<input class="nameInput" type="text" name="your-name" value size="40" aria-required="ture" aria-invalid="false" placeholder="Your E-mail please.">
 					</label>
 					<div class="main-content2-startBox"><p>START NOW!</p></div>
 				</div>
@@ -75,7 +82,6 @@
 	</div>
 	
 </div>
-
 
 	
 </body>
