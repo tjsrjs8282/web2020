@@ -167,7 +167,7 @@
 			<div class="sliderWrap">
 				<ul class="slider3">
 					<li>
-						<form action="update.php" class="f_layer">
+						<form action="update.php" method="method" class="f_layer">
 							<fieldset>
 								<legend>여행일정</legend>
 								<label for=""></label>
@@ -660,6 +660,7 @@ $(document).ready(function(){
 			
 			var mySlide3 = $(".slider3").bxSlider({	
 				controls:false,
+				touchEnabled:false,
 				pager:false,
 				mode:'horizontal',
 				speed:600,

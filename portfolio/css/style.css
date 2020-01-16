@@ -1,0 +1,19 @@
+html{scroll-behavior: smooth;}
+
+
+
+.hambergerIcon{cursor:pointer; position:fixed; top: 20px; right: 20px; width: 60px; height: 55px; background-color: gray;}
+
+.hamberger{position:absolute; width: 50px; height:8px; top: 50%; left: 50%;	transform: translate(-50%,-50%); background-color: #fff; box-shadow:0px 2px 5px rgba(0,0,0,.3); transition:0.4s;}
+
+.hamberger:after,
+.hamberger:before
+{content:''; position: absolute; width: 50px; height:8px; background-color: #fff; box-shadow:0px 2px 5px rgba(0,0,0,.3); transition: 0.4s;}
+
+.hamberger:after{top:-16px;}
+.hamberger:before{top:16px;}
+
+.hambergerIcon.active .hamberger{background-color: rgba(0,0,0,0); box-shadow:0px 0px 0px rgba(0,0,0,0);}
+.hambergerIcon.active .hamberger:after{transform: rotate(45deg); top:0px;}
+.hambergerIcon.active .hamberger:before{transform: rotate(135deg); top:0px;}
+

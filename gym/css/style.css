@@ -1,3 +1,4 @@
+html{scroll-behavior: smooth;}
 body{font-family: 'Noto Sans', sans-serif;}
 #header-backround {max-width: 100%; height: 1200px; background-image: url(../images/homeBack.jpg);
 background-repeat: no-repeat; background-size: cover; background-attachment: fixed;}
@@ -15,7 +16,7 @@ background-repeat: no-repeat; background-size: cover; background-attachment: fix
 
 
 .header-maintitle{ max-width: 100%; height: 500px; margin: 90px 0; position: relative;}
-#text text {fill:rgba(0,0,0,0.2); display:inline-block;  font-size: 110px;  font-weight:bold; line-height: 100px; transform: rotate(-37deg);}
+.header-title-MainTxt h1 {color:rgba(255,255,255,0.2); display:inline-block;  font-size: 100px;  font-weight:bold; line-height: 100px; transform: rotate(-37deg); }
 
 .header-title-MainTxt{position: fixed;}
 
@@ -82,3 +83,20 @@ animation-delay: 0.5s; }
 .main-content2-startBox{margin-top: 15px;cursor:pointer; width: 540px; height: 45px; background-color: #e26d4a; text-align: center; color:#fff;line-height: 45px; font-size:23px;}
 .main-content2-startBox:hover{ font-weight:bold;}
 
+
+
+
+
+::-webkit-scrollbar
+{
+	width: 16px;
+}
+::-webkit-scrollbar-thumb
+{
+	background: linear-gradient(transparent,#606060);
+	border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover
+{
+	background: linear-gradient(transparent,#000);
+}
