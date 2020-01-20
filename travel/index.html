@@ -6,10 +6,11 @@
 	<title>문서 제목</title>
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/jquery.bxslider.js"></script>
+
+
 
 </head>
 
@@ -138,7 +139,7 @@
 
 <!-- --------------------------------------------searchbox start  -->
 
-			<div class="content-planSearchBox">
+			<div class="wow bounceInLeft content-planSearchBox">
 				<div class="planSearchBox-Btn">
 					<ul class="clearfix">
 						<li class="SearchBtn">
@@ -164,7 +165,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="sliderWrap">
+			<div class="wow bounceInLeft sliderWrap">
 				<ul class="slider3">
 					<li>
 						<form action="update.php" method="method" class="f_layer">
@@ -362,7 +363,7 @@
 <!-- --------------------------------------------content article start  -->
 			<div class="content_articleBox">
 					<ul class="clearfix">
-						<li>
+						<li class="wow pulse">
 							<div class="content_articleBox-card1">
 								<img src="images/travel01.jpg" alt="프랑스">
 								<div class="content_articleBox-textBox1">
@@ -378,9 +379,9 @@
 								</div>
 							</div>
 						</li>
-						<li>
+						<li class="wow pulse" data-wow-delay="0.1s">
 							<div class="content_articleBox-card2">
-								<img src="images/travel02.jpg" alt="프랑스">
+								<img src="images/travel02.jpg" alt="일본">
 								<div class="content_articleBox-textBox2">
 									<div class="content_textBox2-rightText">
 										<p>일본</p>
@@ -397,7 +398,7 @@
 					</ul>
 				<div class="content_articleBox2">
 					<ul class="clearfix">
-						<li>
+						<li class="wow pulse" data-wow-delay="0.2s">
 							<div class="content_sliderWrap">
 								<ul class="slider">
 									<li>
@@ -448,7 +449,7 @@
 								</div>
 							</div>
 						</li>
-						<li>
+						<li class="wow pulse" data-wow-delay="0.3s">
 							<div class="content_sliderWrap2">
 								<ul class="slider2">
 									<li>
@@ -499,7 +500,7 @@
 								</div>
 							</div>
 						</li>
-						<li>
+						<li class="wow pulse" data-wow-delay="0.5s">
 							<div class="content_articleBox-card5">
 								<div class="tokyoText">
 									<p></p>
@@ -515,7 +516,7 @@
 								</div>
 							</div>
 						</li>
-						<li>
+						<li class="wow pulse" data-wow-delay="0.6s">
 							<div class="content_articleBox-card6">
 								<img src="images/travel06.jpg" alt="임정희님">
 								<div class="content_articleBox-textBox6">
@@ -532,7 +533,7 @@
 				</div>
 				<div class="content_articleBox3">
 					<ul class="clearfix">
-						<li>
+						<li class="wow pulse" data-wow-delay="0.7s">
 							<div class="content_articleBox-card7">
 								<img src="images/travel07.jpg" alt="">
 								<div class="card7-hoverBox">
@@ -548,7 +549,7 @@
 							</div>
 						</li>
 
-						<li>
+						<li class="wow pulse" data-wow-delay="0.8s">
 							<div class="content_articleBox-card8">
 								<img src="images/travel08.jpg" alt="맛집">
 								<div class="card8-hoverBox">
@@ -562,7 +563,7 @@
 								</div>
 							</div>
 						</li>
-						<li>
+						<li class="wow pulse" data-wow-delay="0.9s">
 							<div class="content_articleBox-card9">
 								<img src="images/travel09.jpg" alt="숙박">
 								<div class="card9hoverBox">
@@ -576,7 +577,7 @@
 								</div>
 							</div>
 						</li>
-						<li>
+						<li class="wow pulse" data-wow-delay="1s">
 							<div class="content_articleBox-card10">
 								<img src="images/travel10.jpg" alt="후기">
 								<div class="card10hoverBox">
@@ -627,6 +628,9 @@
 	</div>
 </div>
 
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/wow.js"></script>
 
 <script>
 $(document).ready(function(){
@@ -678,6 +682,7 @@ $(document).ready(function(){
 				$('.topMenuBtn').removeClass('active');
 				$(this).addClass('active'); 
 			});
+			new WOW().init();
 		}); 
 </script>
 	

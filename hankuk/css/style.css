@@ -154,7 +154,7 @@ position: absolute; top: 50px;}
 /*.bxsliderWrap2:hover .bookBackground img{transform: scale(1.1);}*/
 
 .bxslider2 li { overflow: hidden;}
-.bookBackground img{transition: all 1s; width: 100%; height: 100%;  height: 225px;}
+.bookBackground img{transition: all 1s; width: 100%; height: 225px;}
 .bookBoy img{transition: 0.5s; }
 .bookBoy{position:absolute; top: -15px; right: 100px; }
 

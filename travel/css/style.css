@@ -444,6 +444,9 @@ fieldset li{margin-bottom: 5px;}
 
 
 
+
+.wow{transition: 0.3s;}
+
 /*-----------------------slider box 시작 */
 .bx-wrapper {
 	-moz-box-shadow: none;
