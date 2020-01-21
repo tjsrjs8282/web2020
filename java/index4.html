@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+</head>
+<body>
+	
+	<h3>
+		산술연산
+	</h3>
+	<script>
+		var x = 32;
+		var total = 100+x*2/4-3;
+		var mod = x % 2
+		document.write("100+x*2/4-3 ="+total);
+		console.log("x를 2로 나눈 나머지+" + mod);
+
+		전위연산자
+		var a=1
+		var b=++a
+		// ++이 앞에오면 +1이 더해진 a값이 b에 담김
+		// ++이 뒤에 오면 원래의 a값이 담겨진 후 a에만 2이 더해짐 
+
+		var h = 3, j = 5
+		document.write("두수의 차이:" + ((h>j)?(a-b):(b-a)) );
+	</script>
+</body>
+</html>

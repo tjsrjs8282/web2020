@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="css/colorbox.css">
+
+
+<style>
+	ul{width: 1000px; margin: 0 auto; list-style: none;}
+	ul>li{float:left; width: 250px;}
+	ul>li img{width: 100%; display: block;}
+</style>
+
+</head>
+
+
+<body>
+	
+<ul class="clearfix">
+	<li><a href="../image/img1.jpg" class="modal" title="앵무새"><img src="../image/img1.jpg" alt=""></a></li>
+	<li><a href="../image/img2.jpg" class="modal" title="꽃"><img src="../image/img2.jpg" alt=""></a></li>
+	<li><a href="../image/img3.jpg" class="modal" title="거위"><img src="../image/img3.jpg" alt=""></a></li>
+	<li><a href="https://www.youtube.com/embed/LGHR84kLg5o" class="youtube" title="사람들"><img src="../image/img4.jpg" alt=""></a></li>
+</ul>
+
+
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery.colorbox.js"></script>
+<script>
+
+	$('.modal').colorbox({
+		rel:"modal"
+	});
+	$(".youtube").colorbox({
+		iframe:true,
+		innerWidth:600,
+		innerHeight:338
+	})
+
+
+
+</script>
+
+</body>
+</html>
